@@ -1,0 +1,55 @@
+﻿@model DemoTask.Service.ViewModel.UserViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<style>
+    .bc, .heading,
+    input:checked + .switch-box,
+    .rule input:checked + .rule-box,
+    .common-btn,
+    .datepicker td.active,
+    .datepicker td.active.active,
+    .dataTables_paginate a:hover,
+    .dataTables_paginate a.current,
+    .gender input:checked + .rule-box,
+    .identification input:checked + .rule-box,
+    .checkbox input:checked ~ .checkmark {
+        background-color: #0874bb;
+    }
+
+    .rule input:checked + .rule-box, .gender input:checked + .rule-box,
+    .identification input:checked + .rule-box,
+    .checkbox input:checked ~ .checkmark {
+        border-color: #0874bb;
+    }
+
+    .pc,
+    .navbar ul li a,
+    .organisation-info h2 strong,
+    .datepicker th.switch,
+    .widget-head-title,
+    .notify-inner ul li div a,
+    .common-table thead th {
+        color: #0874bb
+    }
+</style>
+
+<div class="login">
+    <img src="@Url.Content("~/images/logo.png")" width="300" alt="">
+    <p>Welcome back! Login to explore what you love.</p>
+    <form asp-controller="Login" asp-action="Index" role="form" method="post">
+        <div class="form-group">
+            <label class="form-label">USER ID</label>
+            <input type="text" asp-for="UserName" class="form-control" id="username" placeholder="Enter username">
+        </div>
+        <div class="form-group">
+            <label class="form-label">PASSWORD</label>
+            <input type="password" asp-for="Password" class="form-control" id="Password" placeholder="Enter Password">
+        </div>
+        <button type="submit" class="common-btn">  Login <img src="images/arrow-right.svg" alt=""></button>
+        <div class="form-group" style="padding-top:20px">
+            Power by : <a href="#" target="_blank"> Software Gaze</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Infrastructure.Context.deps.json
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Infrastructure.Context.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Infrastructure.Context.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Core.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Domain.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Core.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\bin\Debug\net9.0\DemoTask.Domain.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.csproj.AssemblyReference.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.AssemblyInfoInputs.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.AssemblyInfo.cs
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.csproj.CoreCompileInputs.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.53B8344B.Up2Date
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\refint\DemoTask.Infrastructure.Context.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\DemoTask.Infrastructure.Context.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Infrastructure.Context\obj\Debug\net9.0\ref\DemoTask.Infrastructure.Context.dll

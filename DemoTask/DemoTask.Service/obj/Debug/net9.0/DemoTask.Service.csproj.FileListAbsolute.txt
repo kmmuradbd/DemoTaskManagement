@@ -1,0 +1,17 @@
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.AssemblyInfoInputs.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.AssemblyInfo.cs
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.csproj.CoreCompileInputs.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Service.deps.json
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Service.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Service.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Core.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Domain.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Core.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Domain.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.csproj.AssemblyReference.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.487D1F7E.Up2Date
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\refint\DemoTask.Service.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\ref\DemoTask.Service.dll

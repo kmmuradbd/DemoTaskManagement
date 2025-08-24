@@ -1,0 +1,12 @@
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\bin\Debug\net9.0\DemoTask.Core.deps.json
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\bin\Debug\net9.0\DemoTask.Core.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\bin\Debug\net9.0\DemoTask.Core.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.AssemblyInfoInputs.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.AssemblyInfo.cs
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.csproj.CoreCompileInputs.cache
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\refint\DemoTask.Core.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.pdb
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\ref\DemoTask.Core.dll
+C:\Users\ADA\source\repos\DemoTask\DemoTask.Core\obj\Debug\net9.0\DemoTask.Core.csproj.AssemblyReference.cache

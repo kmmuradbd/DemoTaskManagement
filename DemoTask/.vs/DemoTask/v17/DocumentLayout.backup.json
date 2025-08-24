@@ -1,0 +1,300 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.service\\service\\mastermenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|solutionrelative:demotask.service\\service\\mastermenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.service\\viewmodel\\mastermenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|solutionrelative:demotask.service\\viewmodel\\mastermenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.service\\interface\\imastermenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|solutionrelative:demotask.service\\interface\\imastermenuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5D088-4476-4F3A-90B4-D2CB5DCDB186}|DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.infrastructure.context\\demotaskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5D088-4476-4F3A-90B4-D2CB5DCDB186}|DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj|solutionrelative:demotask.infrastructure.context\\demotaskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28C5D088-4476-4F3A-90B4-D2CB5DCDB186}|DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.infrastructure.context\\repository\\mastermenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28C5D088-4476-4F3A-90B4-D2CB5DCDB186}|DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj|solutionrelative:demotask.infrastructure.context\\repository\\mastermenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D065F7-9DFC-4DDB-8823-2878567F0F15}|DemoTask.Domain\\DemoTask.Domain.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.domain\\repositorycontract\\imastermenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D065F7-9DFC-4DDB-8823-2878567F0F15}|DemoTask.Domain\\DemoTask.Domain.csproj|solutionrelative:demotask.domain\\repositorycontract\\imastermenurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04D065F7-9DFC-4DDB-8823-2878567F0F15}|DemoTask.Domain\\DemoTask.Domain.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.domain\\domainobject\\mastermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04D065F7-9DFC-4DDB-8823-2878567F0F15}|DemoTask.Domain\\DemoTask.Domain.csproj|solutionrelative:demotask.domain\\domainobject\\mastermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|c:\\users\\ada\\source\\repos\\demotask\\demo.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|c:\\users\\ada\\source\\repos\\demotask\\demotask.service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199A9857-F0FC-4A1B-BEFC-6DE63D0AE88E}|DemoTask.Service\\DemoTask.Service.csproj|solutionrelative:demotask.service\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMasterMenuRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Domain\\RepositoryContract\\IMasterMenuRepository.cs",
+              "RelativeDocumentMoniker": "DemoTask.Domain\\RepositoryContract\\IMasterMenuRepository.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Domain\\RepositoryContract\\IMasterMenuRepository.cs",
+              "RelativeToolTip": "DemoTask.Domain\\RepositoryContract\\IMasterMenuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:54:58.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MasterMenu.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Domain\\DomainObject\\MasterMenu.cs",
+              "RelativeDocumentMoniker": "DemoTask.Domain\\DomainObject\\MasterMenu.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Domain\\DomainObject\\MasterMenu.cs",
+              "RelativeToolTip": "DemoTask.Domain\\DomainObject\\MasterMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:54:29.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MasterMenuViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\ViewModel\\MasterMenuViewModel.cs",
+              "RelativeDocumentMoniker": "DemoTask.Service\\ViewModel\\MasterMenuViewModel.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\ViewModel\\MasterMenuViewModel.cs",
+              "RelativeToolTip": "DemoTask.Service\\ViewModel\\MasterMenuViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:53:57.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJMAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T05:52:42.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "DemoTask.Service\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\Service\\UserService.cs",
+              "RelativeToolTip": "DemoTask.Service\\Service\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:41:35.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DemoTaskContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Infrastructure.Context\\DemoTaskContext.cs",
+              "RelativeDocumentMoniker": "DemoTask.Infrastructure.Context\\DemoTaskContext.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Infrastructure.Context\\DemoTaskContext.cs",
+              "RelativeToolTip": "DemoTask.Infrastructure.Context\\DemoTaskContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:34:58.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_LoginLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeToolTip": "Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T05:12:28.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Program.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Program.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Program.cs",
+              "RelativeToolTip": "Demo.WebUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:11:21.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Demo.WebUI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T04:55:37.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Demo.WebUI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T04:55:02.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MasterMenuService.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\Service\\MasterMenuService.cs",
+              "RelativeDocumentMoniker": "DemoTask.Service\\Service\\MasterMenuService.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\Service\\MasterMenuService.cs",
+              "RelativeToolTip": "DemoTask.Service\\Service\\MasterMenuService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAArwD8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:56:22.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MasterMenuRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Infrastructure.Context\\Repository\\MasterMenuRepository.cs",
+              "RelativeDocumentMoniker": "DemoTask.Infrastructure.Context\\Repository\\MasterMenuRepository.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Infrastructure.Context\\Repository\\MasterMenuRepository.cs",
+              "RelativeToolTip": "DemoTask.Infrastructure.Context\\Repository\\MasterMenuRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:55:18.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMasterMenuService.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\Interface\\IMasterMenuService.cs",
+              "RelativeDocumentMoniker": "DemoTask.Service\\Interface\\IMasterMenuService.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\Interface\\IMasterMenuService.cs",
+              "RelativeToolTip": "DemoTask.Service\\Interface\\IMasterMenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:56:04.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\appsettings.json",
+              "RelativeDocumentMoniker": "Demo.WebUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\appsettings.json",
+              "RelativeToolTip": "Demo.WebUI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-24T05:43:17.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Demo.WebUI\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T05:11:41.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Demo.WebUI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCIAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T05:11:04.114Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CJTlj8XtdQo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\DemoTask.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ADA\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512"
+  ],
+  "logs": []
+}

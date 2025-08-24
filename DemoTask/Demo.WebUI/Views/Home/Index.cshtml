@@ -1,0 +1,339 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<section class="userHistory clearfix">
+    <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-12 text-center">
+            <div class="card-info">
+                <img src="/images/icons/icon_area.svg" alt="">
+                <h2>
+                    <strong>
+                        @{
+                            @ViewBag.TodayOrderCount
+                        }
+                    </strong>
+                    Today Order
+                </h2>
+                Last Day:  @{
+                @ViewBag.YesterDayOrderCount
+                                }
+            </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-12 text-center">
+            <div class="card-info">
+                <img src="/images/icons/icon_balance.svg" alt="">
+                <h2>
+                    <strong>
+                        @{
+                            @ViewBag.TodayOrderAmount
+                        }
+                    </strong>
+                    Today  Amount
+
+                </h2>
+                Last Day:  @{
+                @ViewBag.YesterDayOrderAmount
+                                }
+            </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-12 text-center">
+            <div class="card-info">
+                <img src="/images/icons/icon_distribution-house.svg" alt="">
+                <h2>
+                    <strong>
+                        @{
+                            @ViewBag.CurrectMonthOrderCount
+                        }
+                    </strong>
+                    Currect Month Order
+                </h2>
+                Last Month:  @{
+                @ViewBag.LastMonthOrderCount
+                                }
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12 text-center">
+            <div class="card-info">
+                <img src="/images/icons/icon_coverage.svg" alt="">
+                <h2>
+                    <strong>
+                        @{
+                            @ViewBag.CurrectMonthOrderAmount
+                        }
+                    </strong>
+                    Currect Month Amount
+                </h2>
+                Last Month: @{
+                @ViewBag.LastMonthOrderAmount
+                                }
+
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12 text-center">
+            <div class="card-info">
+                <img src="/images/icons/icon_distribution-house.svg" alt="">
+                <h2>
+                    <strong>
+                        @{
+                            @ViewBag.CurrectYearOrderCount
+                        }
+                    </strong>
+                    Currect Year Order
+                </h2>
+                Last Year: @{
+                @ViewBag.LastYearOrderCount
+                                }
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-12 text-center">
+            <div class="card-info">
+                <img src="/images/icons/icon_coverage.svg" alt="">
+                <h2>
+                    <strong>
+                        @{
+                            @ViewBag.CurrectYearOrderAmount
+                        }
+                    </strong>
+                    Currect Year Amount
+                </h2>
+
+                Last Year:  @{
+                @ViewBag.LastYearOrderAmount
+                                }
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="innerSection clearfix padding-top-none">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        #barchart {
+            width: 100%; /* Full width of the parent container */
+            max-width: 900px; /* Optional maximum width */
+            height: auto; /* Allow height to adjust dynamically */
+            min-height: 400px; /* Ensure minimum height for readability */
+        }
+
+        .chart-border {
+            width: 100%;
+            height: 300px; /* Adjust as needed */
+            background-color: #f9f9f9; /* Background color */
+            border: 1px solid #ccc; /* Border color */
+            border-right: 1px solid #999; /* 3D effect on right */
+            border-bottom: 1px solid #999; /* 3D effect on bottom */
+            box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), 4px 4px 6px rgba(0, 0, 0, 0.2); /* Additional shadow */
+            border-radius: 4px; /* Optional rounded corners */
+            margin: 1%;
+        }
+    </style>
+    <script>
+        // Bar Chart
+                function drawChart() {
+            jQuery.ajax({
+                type: 'POST',
+                url: '/Admin/Home/GetDataforBarchart',
+                dataType: 'json',
+                success: function (response) {
+                    try {
+                        console.log("Server response:", response);
+                        if (response.success && Array.isArray(response.data)) {
+                            drawBarChart(response.data);
+                        } else {
+                            console.error("Unexpected response format or no data:", response.error || "No data available.");
+                        }
+                    } catch (error) {
+                        console.error("Error parsing response data:", error);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX request failed:", status, error);
+                }
+            });
+        }
+
+        function initialize() {
+            drawChart();
+        }
+
+        function drawBarChart(data) {
+            try {
+
+                     const dataArray = [['Invoice Date', 'Total Amount', { role: 'style' }, { role: 'annotation' }]];
+        const colors = ['#4285F4', '#DB4437', '#F4B400', '#0F9D58', '#AB47BC', '#00ACC1']; // Add more colors if needed
+
+        $.each(data, function (index, record) {
+            if (record.invoiceDate && record.totalAmount !== undefined) {
+                const dateObj = new Date(record.invoiceDate);
+                const day = String(dateObj.getDate()).padStart(2, '0');
+                const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+                const year = dateObj.getFullYear();
+                const formattedDate = `${day}/${month}/${year}`;
+
+                const amount = parseFloat(record.totalAmount);
+                const color = colors[index % colors.length]; // Cycle through colors
+
+                dataArray.push([formattedDate, amount, color, amount.toString()]);
+            } else {
+                console.warn("Invalid record format:", record);
+            }
+        });
+
+
+                if (dataArray.length <= 1) {
+                    console.warn("No valid data available to draw the chart.");
+                    return;
+                }
+
+                const dataTable = google.visualization.arrayToDataTable(dataArray);
+
+                const options = {
+                    title: 'Daily Invoice',
+                    chartArea: { width: '80%' },
+                    hAxis: {
+                        title: 'Invoice Date',
+                        slantedText: true,
+                        slantedTextAngle: 30,
+                        textStyle: { fontSize: 12, color: '#333' },
+                        maxTextLines: 1,
+                        showTextEvery: 1,
+                        gridlines: { count: 0 }
+                    },
+                    vAxis: {
+                        title: 'Total Amount',
+                        minValue: 0,
+                        textStyle: { fontSize: 12, color: '#333', bold: true }
+                    },
+                    colors: ['#4285F4'],
+                    annotations: {
+                        alwaysOutside: true,
+                        textStyle: {
+                            fontSize: 12,
+                            color: '#000',
+                            auraColor: 'none',
+                             bold: true
+                        }
+                    },
+                    bar: { groupWidth: "50%" }
+                };
+
+                const chart = new google.visualization.ColumnChart(document.getElementById('barchart'));
+                chart.draw(dataTable, options);
+                $(window).resize(() => chart.draw(dataTable, options));
+            } catch (error) {
+                console.error("Error drawing the bar chart:", error);
+            }
+        }
+
+        // Load Google Charts properly
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(initialize);
+
+        //End Barchart
+
+        // Pie Chart
+        function drawPieChart() {
+            jQuery.ajax({
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: '/Admin/Home/GetDataforBarchart',
+                data: "{}",
+                dataType: 'JSON',
+                success: function (response) {
+                    try {
+                        console.log("Server response:", response); // Log to verify
+                        if (response.success && Array.isArray(response.data)) {
+                            DepartmentChart(response.data); // Use response.data for chart data
+                        } else {
+                            console.error("Unexpected response format or no data:", response.error || "No data available.");
+                        }
+                    } catch (error) {
+                        console.error("Error parsing response data:", error);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("AJAX request failed:", status, error);
+                }
+            });
+        }
+
+        function initializePie() {
+            drawPieChart();
+        }
+
+        function DepartmentChart(data) {
+            try {
+                // Prepare data array for Google Charts
+                const dataArray = [['Invoice Date', 'Total Amount']];
+                $.each(data, function (index, record) {
+
+                    if (record.invoiceDate && record.totalAmount !== undefined) {
+                        const dateObj = new Date(record.invoiceDate);
+                const day = String(dateObj.getDate()).padStart(2, '0');
+                const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+                const year = dateObj.getFullYear();
+                const formattedDate = `${day}/${month}/${year}`;
+
+                        dataArray.push([formattedDate, parseFloat(record.totalAmount)]);
+                    }
+                });
+
+                // Convert to Google Visualization DataTable
+                const dataTable = google.visualization.arrayToDataTable(dataArray);
+
+                // Chart options
+                const options = {
+                    title: 'Invoice Date',
+                    sliceVisibilityThreshold: 0, // Ensure all slices are visible, regardless of size
+                    pieSliceText: 'value-and-percentage', // Show both value and percentage on the slices
+                    pieSliceTextStyle: {
+                        fontSize: 12, // Adjust font size for better readability
+                        color: '#fff', // Text color
+                        bold: true
+                    },
+                    tooltip: {
+                        showColorCode: true, // Show color codes for slices in tooltips
+                        text: 'both' // Show both percentage and value in tooltips
+                    },
+                    chartArea: { width: '80%', height: '80%' } // Adjust chart area to fit properly
+                };
+
+                // Draw the Pie Chart
+                const chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                chart.draw(dataTable, options);
+            } catch (error) {
+                console.error("Error drawing the chart:", error);
+            }
+        }
+
+
+        // Load Google Visualization library and call initialize
+        google.load("visualization", "1", { packages: ["corechart"] });
+        google.setOnLoadCallback(initializePie);
+        //End Pie Chart
+
+    </script>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="erp-module">
+                <div id="barchart" class="chart-border"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="erp-module">
+                <div id="piechart" style="height: 400px;" class="chart-border"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
