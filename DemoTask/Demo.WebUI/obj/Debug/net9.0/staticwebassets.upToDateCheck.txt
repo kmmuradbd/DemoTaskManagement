@@ -68,6 +68,7 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-vali
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_balance.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\membertask.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\style.css
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery-2.1.1.intellisense.js
@@ -244,6 +245,7 @@ wwwroot\js\jquery-2.1.1.js
 wwwroot\js\jquery-2.1.1.min.js
 wwwroot\js\jquery-2.1.1.min.map
 wwwroot\js\jquery-3.6.0.min.js
+wwwroot\js\membertask.js
 wwwroot\js\moment.js
 wwwroot\js\moment.min.js
 wwwroot\js\project.js

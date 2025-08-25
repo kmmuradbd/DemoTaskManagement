@@ -4,39 +4,39 @@ using System.Data.SqlClient;
 
 namespace Demo.WebUI.DBQuery
 {
-    public class ProjectDBQuery
+    public class MemberTaskDBQuery
     {
         string connectionString;
 
-        public ProjectDBQuery(string connectionString)
+        public MemberTaskDBQuery(string connectionString)
         {
             this.connectionString = connectionString;
         }
 
-        public List<Projects> GetProjects()
+        public List<MemberTasks> GetMemberTasks()
         {
-            List<Projects> projects = new List<Projects>();
-            Projects project;
+            List<MemberTasks> memberTasks = new List<MemberTasks>();
+            MemberTasks memberTask;
 
-            var data = GetProjectDetailsFromDb();
+            var data = GetMemberTaskFromDb();
 
             foreach (DataRow row in data.Rows)
             {
-                project = new Projects
+                memberTask = new MemberTasks
                 {
                     Id = Convert.ToInt32(row["Id"]),
                     Name = row["Name"].ToString(),
-                    StartDate =Convert.ToDateTime( row["StartDate"].ToString()),
-                    EndDate =Convert.ToDateTime( row["EndDate"].ToString()),
-                    ManagerName = row["ManagerName"].ToString(),
+                  //  StartDate = Convert.ToDateTime(row["StartDate"].ToString()),
+                   // EndDate = Convert.ToDateTime(row["EndDate"].ToString()),
+                   // ManagerName = row["ManagerName"].ToString(),
                     Remarks = row["Remarks"].ToString(),
                 };
-                projects.Add(project);
+                memberTasks.Add(memberTask);
             }
 
-            return projects;
+            return memberTasks;
         }
-        private DataTable GetProjectDetailsFromDb()
+        private DataTable GetMemberTaskFromDb()
         {
             DataTable dataTable = new DataTable();
 
@@ -47,7 +47,7 @@ namespace Demo.WebUI.DBQuery
                     connection.Open();
 
                     // Use the stored procedure name instead of SQL query
-                    using (SqlCommand command = new SqlCommand("Sp_GetProject", connection))
+                    using (SqlCommand command = new SqlCommand("Sp_GetMemberTask", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
 

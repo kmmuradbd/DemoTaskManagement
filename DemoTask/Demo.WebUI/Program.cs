@@ -30,6 +30,9 @@ builder.Services.AddSignalR();
 //DI
 builder.Services.AddSingleton<ProjectHub>();
 builder.Services.AddSingleton<SubscribeProjectTableDependency>();
+builder.Services.AddSingleton<MemberTaskHub>();
+builder.Services.AddSingleton<SubscribeMemberTaskTableDependency>();
+
 
 
 
@@ -56,6 +59,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 app.MapHub<ProjectHub>("/projectHub");
+app.MapHub<MemberTaskHub>("/memberTaskHub");
 app.UseStaticFiles();
 app.UseSession();
 app.MapStaticAssets();
@@ -66,4 +70,5 @@ app.MapControllerRoute(
     .WithStaticAssets();
 
 app.UseSqlTableDependency<SubscribeProjectTableDependency>(connectionString);
+app.UseSqlTableDependency<SubscribeMemberTaskTableDependency>(connectionString);
 app.Run();
