@@ -477,3 +477,14 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\Demo.W
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\Demo.WebUI.genruntimeconfig.cache
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\ref\Demo.WebUI.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\co46u2dtkh-wmn9b8ychv.gz
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\TableDependency.SqlClient.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\ru2kaumghj-xazbho2zi9.gz
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\w8mebuni3h-fxy8zdslur.gz
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\System.Data.SqlClient.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\win-arm64\native\sni.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\win-x64\native\sni.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\win-x86\native\sni.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\8q84o0ngex-1xlfif41wg.gz

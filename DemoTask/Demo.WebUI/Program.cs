@@ -1,3 +1,6 @@
+using Demo.WebUI.Hubs;
+using Demo.WebUI.MiddlewareExtensions;
+using Demo.WebUI.SubscribeTableDependencies;
 using DemoTask.Core;
 using DemoTask.Domain.RepositoryContract;
 using DemoTask.Infrastructure.Context;
@@ -23,6 +26,13 @@ builder.Services.AddTransient<IMemberTaskService, MemberTaskService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSignalR();
+//DI
+builder.Services.AddSingleton<ProjectHub>();
+builder.Services.AddSingleton<SubscribeProjectTableDependency>();
+
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDistributedMemoryCache(); // Required for session
 builder.Services.AddSession(options =>
@@ -35,7 +45,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
-
+var connectionString = app.Configuration.GetConnectionString("TMConnection");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -45,6 +55,7 @@ if (!app.Environment.IsDevelopment())
 app.UseRouting();
 
 app.UseAuthorization();
+app.MapHub<ProjectHub>("/projectHub");
 app.UseStaticFiles();
 app.UseSession();
 app.MapStaticAssets();
@@ -54,5 +65,5 @@ app.MapControllerRoute(
     pattern: "{controller=Login}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-
+app.UseSqlTableDependency<SubscribeProjectTableDependency>(connectionString);
 app.Run();

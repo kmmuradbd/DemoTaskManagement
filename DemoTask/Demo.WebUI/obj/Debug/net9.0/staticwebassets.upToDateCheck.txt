@@ -31,6 +31,7 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\d
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\project.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
@@ -110,6 +111,7 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\ic
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.cookie.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_reject.svg
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate.unobtrusive.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\signalr.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\fontawesome-webfont.svg
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\font-awesome.css
@@ -125,6 +127,7 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\ic
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\selectyze.jquery.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\signalr.min.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_pending-policies.svg
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate.js
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\footable.paginate.js
@@ -243,10 +246,13 @@ wwwroot\js\jquery-2.1.1.min.map
 wwwroot\js\jquery-3.6.0.min.js
 wwwroot\js\moment.js
 wwwroot\js\moment.min.js
+wwwroot\js\project.js
 wwwroot\js\select2.js
 wwwroot\js\select2.min.js
 wwwroot\js\selectyze.jquery.js
 wwwroot\js\selectyze.jquery.min.js
+wwwroot\js\signalr.js
+wwwroot\js\signalr.min.js
 wwwroot\js\site.js
 wwwroot\js\timepicki.js
 wwwroot\js\uy.script.js

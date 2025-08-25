@@ -18,7 +18,7 @@
         </a>
     </form>
     <h3>Project information</h3>
-    <table class="table demo dataTable" data-filter="#filter" data-page-size="20">
+    <table class="table demo dataTable" data-filter="#filter" data-page-size="20" id="tblProjects">
         <thead>
             <tr>
                 <th>
@@ -39,45 +39,18 @@
                 <th>
                     @Html.LabelFor(r => Model.First().Remarks)
                 </th>
-                <th data-sort-ignore="true">
-                    @Html.LabelFor(r => Model.First().IsActive)
-                </th>
                 <th data-sort-ignore="true" class="RightAlign">
                     @Html.Label("Action")
                 </th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.Raw(item.Id)
-                    </td>
-                    <td>
-                        @Html.Raw(item.Name)
-                    </td>
-                     <td>
-                        @Html.Raw(item.StartDate.Value.ToString("dd-MM-yyyy"))
-                    </td>
-                    <td>
-                        @Html.Raw(item.EndDate.Value.ToString("dd-MM-yyyy"))
-                    </td> 
-                    <td>
-                        @Html.Raw(item.ManagerName)
-                    </td>
-                    <td>
-                        @Html.Raw(item.Remarks)
-                    </td>
-                    <td>
-                        @(item.IsActive ? "True" : "Inactive")
-                    </td>
-                    <td class="RightAlign">
-                        <a asp-controller="Project" asp-action="Edit" asp-route-id="@item.Id" class="row-edit"><i class="fa fa-edit"></i></a>
-                    </td>
-                </tr>
-            }
         </tbody>
     </table>
     <div class="pagination pagination-centered itemPagination"></div>
 </section>
+
+@section Scripts{
+    <script src="~/js/signalr.js"></script>
+    <script src="~/js/project.js"></script>
+}
