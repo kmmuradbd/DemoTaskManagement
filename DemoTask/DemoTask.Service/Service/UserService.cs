@@ -1,4 +1,5 @@
 ﻿using DemoTask.Domain.RepositoryContract;
+using DemoTask.Infrastructure.Context;
 using DemoTask.Service.Interface;
 using DemoTask.Service.ViewModel;
 using System;
@@ -13,11 +14,12 @@ namespace DemoTask.Service.Service
     public class UserService : IUserService
     {
         private readonly IUserRepository RepoUser;
+        protected readonly IUserRoleMasterRepository RepoUserRoleMaster;
 
-        public UserService(IUserRepository user
-            )
+        public UserService(IUserRepository user, IUserRoleMasterRepository repoUserRoleMaster)
         {
             RepoUser = user;
+            RepoUserRoleMaster = repoUserRoleMaster;
         }
 
         public void Add(UserViewModel user)
@@ -25,6 +27,7 @@ namespace DemoTask.Service.Service
             try
             {
                 user.Id = RepoUser.GetAutoNumber();
+                user.Password= Common.HashCode(user.Password);
                 RepoUser.Add(user.ToEntity());
             }
             catch (Exception ex)
@@ -48,7 +51,8 @@ namespace DemoTask.Service.Service
                 UserViewModel oldUser = Get(user.Id);
 
                 oldUser.FullName = user.FullName;
-                oldUser.Password = user.Password;
+                oldUser.Password =Common.HashCode(user.Password);
+                oldUser.UserRoleMasterId = user.UserRoleMasterId;
                 oldUser.IsActive = user.IsActive;
                 oldUser.UpdatedBy = user.UpdatedBy;
                 oldUser.UpdatedDate = user.UpdatedDate;
@@ -83,6 +87,8 @@ namespace DemoTask.Service.Service
                 CreatedDate = user.CreatedDate,
                 UpdatedBy = user.UpdatedBy,
                 UpdatedDate = user.UpdatedDate,
+                UserName = user.UserName,
+                UserRoleMasterId=user.UserRoleMasterId
             };
         }
 
@@ -102,26 +108,27 @@ namespace DemoTask.Service.Service
                                 CreatedDate = user.CreatedDate,
                                 UpdatedBy = user.UpdatedBy,
                                 UpdatedDate = user.UpdatedDate,
+                                UserRoleMasterId = user.UserRoleMasterId,
+                                UserName= user.UserName,
+                                RoleName=RepoUserRoleMaster.Get(user.UserRoleMasterId).Name,
 
                             }).ToList();
             return userList;
         }
 
-        public async Task<IEnumerable<object>> GetUserList()
-        {
-            return from r in RepoUser.GetAll(r => r.IsActive).ToList()
-                   select new { Text = r.FullName, Value = r.Id };
-        }
-
         public UserViewModel? Login(string userName, string password)
         {
-            var user = RepoUser.Get(r => r.UserName == userName && r.Password == password && r.IsActive);
+            string passwordHash = Common.HashCode(password); // In real scenarios, hash the password before comparison
+            var user = RepoUser.Get(r => r.UserName == userName
+                                      && r.Password == passwordHash   // ⚠️ Ideally this should be hashed
+                                      && r.IsActive);
+
             if (user == null)
             {
                 return null;
             }
 
-            // Map the User entity to UserViewModel
+            // Map the User entity to UserViewModel (exclude password!)
             return new UserViewModel
             {
                 Id = user.Id,
@@ -131,8 +138,20 @@ namespace DemoTask.Service.Service
                 CreatedBy = user.CreatedBy,
                 CreatedDate = user.CreatedDate,
                 FullName = user.FullName,
-                Password = user.Password,
+                UserName = user.UserName   // ✅ Add this if needed
             };
+        }
+
+
+        public IEnumerable<object> GetUserList(int roleId)
+        {
+            return from r in RepoUser.GetAll(r=> r.UserRoleMasterId== roleId).ToList()
+                   select new { Text = r.FullName, Value = r.UserName };
+        }
+        public IEnumerable<object> GetUserRoleMasterList()
+        {
+            return from r in RepoUserRoleMaster.GetAll()
+                   select new { Text = r.Name, Value = r.Id };
         }
 
     }

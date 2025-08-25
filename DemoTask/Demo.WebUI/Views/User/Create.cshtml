@@ -1,0 +1,128 @@
+﻿@model DemoTask.Service.ViewModel.UserViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewBag.Title = "User Create";
+}
+    <form id="UserForm" asp-controller="User" asp-action="Create" role="form" method="post" class="form-horizontal">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[id*=UserRoleMasterId]').select2({
+                placeholder: "Select an option",
+                allowClear: true
+            });
+
+        });
+
+
+    </script>
+    <section class="innerSection clearfix">
+        <a class="btn btn-primary btn-back" href="/User">back</a>
+        <h3>Create User</h3>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        @Html.LabelFor(model => model.UserName)<sup class="orange">*</sup>
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.TextBoxFor(model => model.UserName)
+                        @Html.ValidationMessageFor(model => model.UserName)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        @Html.LabelFor(model => model.FullName)<sup class="orange">*</sup>
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.TextBoxFor(model => model.FullName)
+                        @Html.ValidationMessageFor(model => model.FullName)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        @Html.LabelFor(model => model.RoleName)<sup class="orange">*</sup>
+                    </div>
+                    <div class="col-sm-9">
+                        <select class="form-control" id="UserRoleMasterId" asp-for="UserRoleMasterId" name="UserRoleMasterId" required> </select>
+                        @Html.ValidationMessageFor(model => model.UserRoleMasterId)
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        @Html.LabelFor(model => model.Password)<sup class="orange">*</sup>
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.TextBoxFor(model => model.Password, new { @type = "password" })
+                        @Html.ValidationMessageFor(model => model.Password)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">
+                        @Html.LabelFor(model => model.IsActive)
+                    </div>
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.IsActive)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-9">
+                        <button type="submit" class="btn btn-default btn-primary">save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+           var selectedUserRoleMasterId = '@(Model != null ? Model.UserRoleMasterId : "")';
+
+        $.getJSON('/GetUserRoleMasterList', function (data) {
+            var select = $('#UserRoleMasterId');
+            select.append($('<option>').val('').text('Select UserRole'));
+
+            $.each(data, function (i, item) {
+                var option = $('<option>').val(item.value).text(item.text);
+                if (item.value == selectedUserRoleMasterId) {
+                    option.prop('selected', true);
+                }
+                select.append(option);
+            });
+        });
+    });
+    $(document).ready(function () {
+        $('#UserForm').on('submit', function (e) {
+            e.preventDefault();
+
+             if ($('[id*=Name]').val() == "") {
+                UYResult('Please enter Name.', 'failure');
+                return false;
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: $(this).attr('action'),
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.status === 'success')
+                    {
+                    UYResult("Data saved successfully.", "success", "redirect", "/User");
+                    }
+                    else
+                    {
+                        UYResult(response.message, "failure");
+                    }
+
+                },
+                error: function () {
+                    UYResult(response.message, "failure");
+                }
+            });
+        });
+    });
+</script>
+
+

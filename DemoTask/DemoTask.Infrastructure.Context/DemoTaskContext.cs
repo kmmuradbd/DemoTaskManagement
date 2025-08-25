@@ -18,6 +18,9 @@ namespace DemoTask.Infrastructure.Context
 
         public DbSet<User> Users { get; set; }
         public DbSet<MasterMenu> MasterMenus { get; set; }
+        public DbSet<UserRoleMaster> UserRoleMasters { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<MemberTask> MemberTasks { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

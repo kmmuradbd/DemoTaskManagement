@@ -234,7 +234,7 @@ function UYResult(msg, status, dataAction, dataUrl) {
                 '<div class="modal-dialog">' +
                     '<div class="modal-content">' +
                         '<div class="modal-header modal-title-' + status + '">' +
-                            '<h4 class="modal-title">SUNSOFT</h4>' +
+                            '<h4 class="modal-title">SOFTWARE GAZE</h4>' +
                         '</div>' +
                         '<div class="modal-body">' +
                             '<p>' + msg + '</p>' +

@@ -23,6 +23,7 @@ namespace DemoTask.Service.ViewModel
         public string UpdatedBy { get; set; }
         public Nullable<DateTime> UpdatedDate { get; set; }
         public int UserRoleMasterId { get; set; }
+        public string RoleName { get; set; }
         public string UserName { get; set; }
         public User ToEntity()
         {

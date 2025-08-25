@@ -1,0 +1,83 @@
+﻿@model IEnumerable<DemoTask.Service.ViewModel.ProjectViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewBag.Title = "Project";
+}
+<section class="innerSection clearfix">
+    <form class="form-inline" role="form" method="get" action="/Project/">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Search By:</label>
+        </div>
+        <div class="form-group">
+            <label class="sr-only">Search For:</label>
+            <input id="search" name="search" type="text" class="form-control" placeholder="Search For">
+        </div>
+        <button type="submit" class="btn btn-default btn-primary">Search</button>
+        <a class="btn btn-default btn-primary add-new" href="/Project/Create">
+            <i class="fa fa-plus hidden-xs"></i>add new
+        </a>
+    </form>
+    <h3>Project information</h3>
+    <table class="table demo dataTable" data-filter="#filter" data-page-size="20">
+        <thead>
+            <tr>
+                <th>
+                    @Html.LabelFor(r => Model.First().Id)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Name)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().StartDate)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().EndDate)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().ManagerName)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Remarks)
+                </th>
+                <th data-sort-ignore="true">
+                    @Html.LabelFor(r => Model.First().IsActive)
+                </th>
+                <th data-sort-ignore="true" class="RightAlign">
+                    @Html.Label("Action")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.Raw(item.Id)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Name)
+                    </td>
+                     <td>
+                        @Html.Raw(item.StartDate.Value.ToString("dd-MM-yyyy"))
+                    </td>
+                    <td>
+                        @Html.Raw(item.EndDate.Value.ToString("dd-MM-yyyy"))
+                    </td> 
+                    <td>
+                        @Html.Raw(item.ManagerName)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Remarks)
+                    </td>
+                    <td>
+                        @(item.IsActive ? "True" : "Inactive")
+                    </td>
+                    <td class="RightAlign">
+                        <a asp-controller="Project" asp-action="Edit" asp-route-id="@item.Id" class="row-edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination pagination-centered itemPagination"></div>
+</section>

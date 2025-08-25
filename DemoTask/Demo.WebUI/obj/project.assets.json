@@ -1063,7 +1063,8 @@
         "dependencies": {
           "Dapper": "2.1.66",
           "DemoTask.Core": "1.0.0",
-          "DemoTask.Domain": "1.0.0"
+          "DemoTask.Domain": "1.0.0",
+          "DemoTask.Infrastructure.Context": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DemoTask.Service.dll": {}
@@ -2910,11 +2911,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Demo.WebUI.csproj",
+      "projectUniqueName": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Demo.WebUI.csproj",
       "projectName": "Demo.WebUI",
-      "projectPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\Demo.WebUI.csproj",
+      "projectPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Demo.WebUI.csproj",
       "packagesPath": "C:\\Users\\ADA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\Demo.WebUI\\obj\\",
+      "outputPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2935,17 +2936,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Core\\DemoTask.Core.csproj": {
-              "projectPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Core\\DemoTask.Core.csproj"
+            "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Core\\DemoTask.Core.csproj": {
+              "projectPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Core\\DemoTask.Core.csproj"
             },
-            "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Domain\\DemoTask.Domain.csproj": {
-              "projectPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Domain\\DemoTask.Domain.csproj"
+            "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Domain\\DemoTask.Domain.csproj": {
+              "projectPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Domain\\DemoTask.Domain.csproj"
             },
-            "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj": {
-              "projectPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj"
+            "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj": {
+              "projectPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Infrastructure.Context\\DemoTask.Infrastructure.Context.csproj"
             },
-            "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\DemoTask.Service.csproj": {
-              "projectPath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Service\\DemoTask.Service.csproj"
+            "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Service\\DemoTask.Service.csproj": {
+              "projectPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Service\\DemoTask.Service.csproj"
             }
           }
         }

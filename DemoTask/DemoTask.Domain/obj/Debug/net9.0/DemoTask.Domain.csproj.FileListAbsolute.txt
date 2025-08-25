@@ -13,3 +13,19 @@ C:\Users\ADA\source\repos\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Dom
 C:\Users\ADA\source\repos\DemoTask\DemoTask.Domain\obj\Debug\net9.0\refint\DemoTask.Domain.dll
 C:\Users\ADA\source\repos\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.pdb
 C:\Users\ADA\source\repos\DemoTask\DemoTask.Domain\obj\Debug\net9.0\ref\DemoTask.Domain.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\bin\Debug\net9.0\DemoTask.Domain.deps.json
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\bin\Debug\net9.0\DemoTask.Domain.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\bin\Debug\net9.0\DemoTask.Domain.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\bin\Debug\net9.0\DemoTask.Core.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\bin\Debug\net9.0\DemoTask.Core.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.csproj.AssemblyReference.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.AssemblyInfoInputs.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.AssemblyInfo.cs
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.csproj.CoreCompileInputs.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.sourcelink.json
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.D4A9895A.Up2Date
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\refint\DemoTask.Domain.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\DemoTask.Domain.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Domain\obj\Debug\net9.0\ref\DemoTask.Domain.dll

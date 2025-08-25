@@ -15,6 +15,11 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IMasterMenuRepository, MasterMenuRepository>();
 builder.Services.AddTransient<IMasterMenuService, MasterMenuService>();
+builder.Services.AddTransient<IUserRoleMasterRepository, UserRoleMasterRepository>();
+builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
+builder.Services.AddTransient<IProjectService, ProjectService>();
+builder.Services.AddTransient<IMemberTaskRepository, MemberTaskRepository>();
+builder.Services.AddTransient<IMemberTaskService, MemberTaskService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

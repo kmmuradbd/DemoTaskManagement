@@ -1,0 +1,115 @@
+﻿@model IEnumerable<DemoTask.Service.ViewModel.MemberTaskViewModel>
+@using System.Threading;
+@{
+    ViewBag.Title = "Task";
+}
+<section class="innerSection clearfix">
+    <form class="form-inline" role="form" method="get" action="/MemberTask/">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Search By:</label>
+        </div>
+        <div class="form-group">
+            <label class="sr-only">Search For:</label>
+            <input id="search" name="search" type="text" class="form-control" placeholder="Search For">
+        </div>
+        <button type="submit" class="btn btn-default btn-primary">Search</button>
+       
+                    <a class="btn btn-default btn-primary add-new" href="/MemberTask/Create">
+                        <i class="fa fa-plus hidden-xs"></i>add new
+                    </a>
+    </form>
+    <h3>Task information</h3>
+    <table class="table demo dataTable" data-filter="#filter" data-page-size="20">
+        <thead>
+            <tr>
+                <th>
+                    @Html.LabelFor(r => Model.First().Id)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Name)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().ProjectName)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().MemberName)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Remarks)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Status)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().AssignDate)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().WorkStartDate)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().WorkEndDate)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Duration)
+                </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Comments)
+                </th>
+
+                <th data-sort-ignore="true">
+                    @Html.LabelFor(r => Model.First().IsActive)
+                </th>
+                <th data-sort-ignore="true" class="RightAlign">
+                    @Html.Label("Action")
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.Raw(item.Id)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Name)
+                    </td>
+                    <td>
+                        @Html.Raw(item.ProjectName)
+                    </td>
+                    <td>
+                        @Html.Raw(item.MemberName)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Remarks)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Status)
+                    </td>
+                    <td>
+                        @Html.Raw(item.AssignDate.ToString("dd-MM-yyyy"))
+                    </td>
+                    <td>
+                        @Html.Raw(item.WorkStartDate)
+                    </td>
+                    <td>
+                        @Html.Raw(item.WorkEndDate)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Duration)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Comments)
+                    </td>
+                    <td>
+                        @(item.IsActive ? "True" : "Inactive")
+                    </td>
+                    <td class="RightAlign">
+                        <a asp-controller="MemberTask" asp-action="Edit" asp-route-id="@item.Id" class="row-edit"><i class="fa fa-edit"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination pagination-centered itemPagination"></div>
+</section>

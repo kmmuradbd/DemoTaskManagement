@@ -1,0 +1,162 @@
+﻿@model DemoTask.Service.ViewModel.MemberTaskViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+	ViewBag.Title = "Task Edit";
+}
+
+<form id=memberTaskForm" asp-controller="MemberTask" asp-action="Edit" role="form" method="post" class="form-horizontal">
+	<section class="innerSection clearfix">
+		<a class="btn btn-primary btn-back" href="/MemberTask">back</a>
+		<h3>edit Task</h3>
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<div class="form-group">
+					<div class="col-sm-3">
+						@Html.LabelFor(model => model.ProjectId)<sup class="orange">*</sup>
+					</div>
+					<div class="col-sm-9">
+						<select class="form-control" id="ProjectId" asp-for="ProjectId" name="ProjectId" required> </select>
+						@Html.ValidationMessageFor(model => model.ProjectId)
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-3">
+						@Html.LabelFor(model => model.Name)<sup class="orange">*</sup>
+					</div>
+					<div class="col-sm-9">
+						@Html.TextBoxFor(model => model.Name)
+						@Html.ValidationMessageFor(model => model.Name)
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-sm-3">
+						@Html.LabelFor(model => model.MemberName)<sup class="orange">*</sup>
+					</div>
+					<div class="col-sm-9">
+						<select class="form-control" id="MemberId" asp-for="MemberId" name="MemberId" required> </select>
+						@Html.ValidationMessageFor(model => model.MemberId)
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-3">
+						@Html.LabelFor(model => model.Status)<sup class="orange">*</sup>
+					</div>
+					<div class="col-sm-9">
+						@Html.DropDownListFor(model => model.Status, new SelectList(
+						new List<Object>{
+												new { value = "Pending" , text = "Pending"  },
+												new { value = "Doing" , text = "Doing" },
+												new { value = "Complte", text = "Complte"}
+												},
+												"value",
+												"text"))
+						@Html.ValidationMessageFor(model => model.MemberId)
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<div class="col-sm-3">
+						@Html.LabelFor(model => model.Remarks)<sup class="orange">*</sup>
+					</div>
+					<div class="col-sm-9">
+						@Html.TextBoxFor(model => model.Remarks)
+						@Html.ValidationMessageFor(model => model.Remarks)
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-3">
+						@Html.LabelFor(model => model.IsActive)
+					</div>
+					<div class="col-sm-9">
+						@Html.EditorFor(model => model.IsActive)
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-3 col-sm-9">
+						<button type="submit" class="btn btn-default btn-primary">save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</form>
+
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script>
+	   $(document).ready(function () {
+		   var selectedProjectId = '@(Model?.ProjectId ?? 0)'; // safe null check
+
+		$.getJSON('@Url.Action("GetProjectList", "Project")', function (data) {
+			var select = $('#ProjectId');
+			select.empty(); // clear existing options
+			select.append($('<option>').val('').text('Select Project'));
+
+			$.each(data, function (i, item) {
+				var option = $('<option>').val(item.value).text(item.text);
+				if (item.value == selectedProjectId) {
+					option.prop('selected', true);
+				}
+				select.append(option);
+			});
+		});
+
+
+
+
+		var selectedMemberId = '@(Model?.MemberId ?? "")'; // safe null check
+
+		$.getJSON('@Url.Action("GetUserList", "User")?roleId=3', function (data) {
+			var select = $('#MemberId');
+			select.empty(); // clear existing options
+			select.append($('<option>').val('').text('Select Member'));
+
+			$.each(data, function (i, item) {
+				var option = $('<option>').val(item.value).text(item.text);
+				if (item.value == selectedMemberId) {
+					option.prop('selected', true);
+				}
+				select.append(option);
+			});
+		});
+
+
+
+	});
+
+	$(document).ready(function () {
+		$('#memberTaskForm').on('submit', function (e) {
+			e.preventDefault();
+
+			 if ($('[id*=Name]').val() == "") {
+				UYResult('Please enter Name.', 'failure');
+				return false;
+			}
+
+			$.ajax({
+				type: 'POST',
+				url: $(this).attr('action'),
+				data: $(this).serialize(),
+				success: function (response) {
+					if (response.status === 'success')
+					{
+					UYResult("Data saved successfully.", "success", "redirect", "/MemberTask");
+					}
+					else
+					{
+						UYResult(response.message, "failure");
+					}
+
+				},
+				error: function () {
+					UYResult(response.message, "failure");
+				}
+			});
+		});
+	});
+</script>
+
+
+

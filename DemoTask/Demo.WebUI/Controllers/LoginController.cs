@@ -1,4 +1,5 @@
 ﻿using Demo.WebUI.Helpers;
+using DemoTask.Infrastructure.Context;
 using DemoTask.Service.Interface;
 using DemoTask.Service.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +33,18 @@ namespace Demo.WebUI.Controllers
 
             if (isAuthenticated != null)
             {
+                bool isSysAdmin = false;
+                if (isAuthenticated.UserRoleMasterId == 1) isSysAdmin = true;
+                string basicTicket = TMIdentity.CreateBasicTicket(
+                                                                    isAuthenticated.UserName,
+                                                                    isAuthenticated.FullName,
+                                                                    isSysAdmin,
+                                                                    isAuthenticated.UserRoleMasterId
+                                                                 );
+               // HttpContext.Application["BasicTicket" + username] = basicTicket;
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "userName", user.UserName);
+                SessionHelper.SetObjectAsJson(HttpContext.Session, "isSysAdmin", isSysAdmin);
+                SessionHelper.SetObjectAsJson(HttpContext.Session, "roleId", isAuthenticated.UserRoleMasterId);
                 return RedirectToAction("Index", "Home");
                 
             }

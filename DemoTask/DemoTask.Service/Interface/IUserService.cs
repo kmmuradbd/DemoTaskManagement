@@ -13,7 +13,9 @@ namespace DemoTask.Service.Interface
         void Update(UserViewModel user);
         UserViewModel Get(int id);
         Task<IEnumerable<UserViewModel>> GetAll();
-        Task<IEnumerable<object>> GetUserList();
         UserViewModel? Login(string userName, string password);
+        IEnumerable<object> GetUserRoleMasterList();
+        IEnumerable<object> GetUserList(int roleId);
+
     }
 }

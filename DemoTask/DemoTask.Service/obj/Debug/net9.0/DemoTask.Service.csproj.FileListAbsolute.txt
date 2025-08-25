@@ -15,3 +15,23 @@ C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Se
 C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\refint\DemoTask.Service.dll
 C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.pdb
 C:\Users\ADA\source\repos\DemoTask\DemoTask.Service\obj\Debug\net9.0\ref\DemoTask.Service.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Service.deps.json
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Service.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Service.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Core.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Domain.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Core.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Domain.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.csproj.AssemblyReference.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.AssemblyInfoInputs.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.AssemblyInfo.cs
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.csproj.CoreCompileInputs.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.sourcelink.json
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.487D1F7E.Up2Date
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\refint\DemoTask.Service.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\DemoTask.Service.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\obj\Debug\net9.0\ref\DemoTask.Service.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Infrastructure.Context.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Service\bin\Debug\net9.0\DemoTask.Infrastructure.Context.pdb

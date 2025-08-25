@@ -649,7 +649,8 @@
         "dependencies": {
           "Dapper": "2.1.66",
           "DemoTask.Core": "1.0.0",
-          "DemoTask.Domain": "1.0.0"
+          "DemoTask.Domain": "1.0.0",
+          "DemoTask.Infrastructure.Context": "1.0.0"
         },
         "runtime": {
           "DemoTask.Service.dll": {

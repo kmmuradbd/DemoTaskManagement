@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DemoTask.Core\DemoTask.Core.csproj" />
     <ProjectReference Include="..\DemoTask.Domain\DemoTask.Domain.csproj" />
+    <ProjectReference Include="..\DemoTask.Infrastructure.Context\DemoTask.Infrastructure.Context.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pkSdEZrf2lI=",
+  "dgSpecHash": "7sfNYM0QTAg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADA\\source\\repos\\DemoTask\\DemoTask.Core\\DemoTask.Core.csproj",
+  "projectFilePath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\DemoTask.Core\\DemoTask.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADA\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512"
   ],
