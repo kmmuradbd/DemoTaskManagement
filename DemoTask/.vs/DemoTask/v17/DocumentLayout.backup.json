@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\subscribetabledependencies\\subscribemembertasktabledependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\subscribetabledependencies\\subscribemembertasktabledependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\wwwroot\\js\\project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\wwwroot\\js\\project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\shared\\_loginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\dbquery\\userdbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\dbquery\\userdbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\hubs\\membertaskhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\hubs\\membertaskhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\dbquery\\membertaskdbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\dbquery\\membertaskdbquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\wwwroot\\js\\membertask.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\wwwroot\\js\\membertask.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\wwwroot\\js\\project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\wwwroot\\js\\project.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\views\\membertask\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\views\\membertask\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\subscribetabledependencies\\subscribeprojecttabledependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\subscribetabledependencies\\subscribeprojecttabledependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\subscribetabledependencies\\subscribemembertasktabledependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\subscribetabledependencies\\subscribemembertasktabledependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\hubs\\projecthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\hubs\\projecthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,66 +67,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SubscribeMemberTaskTableDependency.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
-              "RelativeToolTip": "Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:16:25.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SubscribeProjectTableDependency.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\SubscribeTableDependencies\\SubscribeProjectTableDependency.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\SubscribeTableDependencies\\SubscribeProjectTableDependency.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\SubscribeTableDependencies\\SubscribeProjectTableDependency.cs",
-              "RelativeToolTip": "Demo.WebUI\\SubscribeTableDependencies\\SubscribeProjectTableDependency.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:16:03.308Z",
+              "Title": "project.js",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\project.js",
+              "RelativeDocumentMoniker": "Demo.WebUI\\wwwroot\\js\\project.js",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\project.js",
+              "RelativeToolTip": "Demo.WebUI\\wwwroot\\js\\project.js",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-25T15:46:15.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MemberTaskDBQuery.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\DBQuery\\MemberTaskDBQuery.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\DBQuery\\MemberTaskDBQuery.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\DBQuery\\MemberTaskDBQuery.cs",
-              "RelativeToolTip": "Demo.WebUI\\DBQuery\\MemberTaskDBQuery.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwBEAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:04:12.42Z",
+              "Title": "_LoginLayout.cshtml",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "RelativeToolTip": "Demo.WebUI\\Views\\Shared\\_LoginLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T15:24:44.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MemberTaskHub.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Hubs\\MemberTaskHub.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\Hubs\\MemberTaskHub.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Hubs\\MemberTaskHub.cs",
-              "RelativeToolTip": "Demo.WebUI\\Hubs\\MemberTaskHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:03:30.916Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Demo.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAALwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T15:23:23.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "membertask.js",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\membertask.js",
-              "RelativeDocumentMoniker": "Demo.WebUI\\wwwroot\\js\\membertask.js",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\membertask.js",
-              "RelativeToolTip": "Demo.WebUI\\wwwroot\\js\\membertask.js",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-25T06:03:02.548Z",
+              "Title": "UserDBQuery.cs",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\DBQuery\\UserDBQuery.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\DBQuery\\UserDBQuery.cs",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\DBQuery\\UserDBQuery.cs",
+              "RelativeToolTip": "Demo.WebUI\\DBQuery\\UserDBQuery.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAlwCUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T13:47:06.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubscribeMemberTaskTableDependency.cs",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
+              "RelativeToolTip": "Demo.WebUI\\SubscribeTableDependencies\\SubscribeMemberTaskTableDependency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T07:46:49.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Program.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Program.cs",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Program.cs",
+              "RelativeToolTip": "Demo.WebUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T07:12:19.987Z",
               "EditorCaption": ""
             },
             {
@@ -125,36 +150,61 @@
               "RelativeDocumentMoniker": "Demo.WebUI\\Views\\MemberTask\\Index.cshtml",
               "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Views\\MemberTask\\Index.cshtml",
               "RelativeToolTip": "Demo.WebUI\\Views\\MemberTask\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-25T06:02:01.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "project.js",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\project.js",
-              "RelativeDocumentMoniker": "Demo.WebUI\\wwwroot\\js\\project.js",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\project.js",
-              "RelativeToolTip": "Demo.WebUI\\wwwroot\\js\\project.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-08-25T06:01:02.368Z",
+              "WhenOpened": "2025-08-25T06:49:12.171Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Program.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\Program.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Program.cs",
-              "RelativeToolTip": "Demo.WebUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T06:00:45.531Z",
+              "Title": "membertask.js",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\membertask.js",
+              "RelativeDocumentMoniker": "Demo.WebUI\\wwwroot\\js\\membertask.js",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\wwwroot\\js\\membertask.js",
+              "RelativeToolTip": "Demo.WebUI\\wwwroot\\js\\membertask.js",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwD0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-08-25T06:46:46.628Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemberTaskHub.cs",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Hubs\\MemberTaskHub.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Hubs\\MemberTaskHub.cs",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Hubs\\MemberTaskHub.cs",
+              "RelativeToolTip": "Demo.WebUI\\Hubs\\MemberTaskHub.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T06:43:44.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProjectHub.cs",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Hubs\\ProjectHub.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Hubs\\ProjectHub.cs",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Hubs\\ProjectHub.cs",
+              "RelativeToolTip": "Demo.WebUI\\Hubs\\ProjectHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T06:42:06.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Demo.WebUI\\Models\\Users.cs",
+              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Models\\Users.cs",
+              "RelativeToolTip": "Demo.WebUI\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T06:37:34.422Z"
             }
           ]
         }

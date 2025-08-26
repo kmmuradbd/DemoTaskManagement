@@ -32,7 +32,7 @@ builder.Services.AddSingleton<ProjectHub>();
 builder.Services.AddSingleton<SubscribeProjectTableDependency>();
 builder.Services.AddSingleton<MemberTaskHub>();
 builder.Services.AddSingleton<SubscribeMemberTaskTableDependency>();
-
+builder.Services.AddSingleton<SubscribeUserTableDependency>();
 
 
 
@@ -71,4 +71,5 @@ app.MapControllerRoute(
 
 app.UseSqlTableDependency<SubscribeProjectTableDependency>(connectionString);
 app.UseSqlTableDependency<SubscribeMemberTaskTableDependency>(connectionString);
+app.UseSqlTableDependency<SubscribeUserTableDependency>(connectionString);
 app.Run();

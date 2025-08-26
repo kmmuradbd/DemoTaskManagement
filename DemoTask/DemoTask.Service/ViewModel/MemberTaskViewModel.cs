@@ -24,11 +24,6 @@ namespace DemoTask.Service.ViewModel
         public string MemberId { get; set; }
         public string MemberName { get; set; }
         public string Status { get; set; }
-        public DateTime AssignDate { get; set; }
-        public Nullable<DateTime> WorkStartDate { get; set; }
-        public Nullable<DateTime> WorkEndDate { get; set; }
-        public String Duration { get; set; }
-        public string Comments { get; set; }
         public string Remarks { get; set; }
         public int RoleId { get; set; }
         #endregion
@@ -54,11 +49,6 @@ namespace DemoTask.Service.ViewModel
             memberTask.ProjectId = this.ProjectId;
             memberTask.MemberId = this.MemberId;
             memberTask.Status = this.Status;
-            memberTask.AssignDate = this.AssignDate;
-            memberTask.WorkStartDate = this.WorkStartDate;
-            memberTask.WorkEndDate = this.WorkEndDate;
-            memberTask.Duration = this.Duration;
-            memberTask.Comments = this.Comments;
             memberTask.Remarks = this.Remarks;
             memberTask.IsActive = this.IsActive;
             memberTask.IsArchived = this.IsArchived;

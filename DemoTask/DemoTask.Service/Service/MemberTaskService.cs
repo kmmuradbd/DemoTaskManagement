@@ -26,7 +26,6 @@ namespace DemoTask.Service.Service
             try
             {
                 memberTask.Id = RepoMemberTask.GetAutoNumber();
-                memberTask.AssignDate = DateTime.Now;
                 memberTask.Status = "Pending";
                 RepoMemberTask.Add(memberTask.ToEntity());
             }
@@ -53,20 +52,6 @@ namespace DemoTask.Service.Service
                 oldMemberTask.ProjectId = memberTask.ProjectId;
                 oldMemberTask.MemberId = memberTask.MemberId;
                 oldMemberTask.Status = memberTask.Status;
-                if (memberTask.Status == "Doing")
-                    oldMemberTask.WorkStartDate = DateTime.Now;
-                if (memberTask.Status == "Complte")
-                {
-                    oldMemberTask.WorkEndDate = DateTime.Now;
-                    if (oldMemberTask.WorkStartDate.HasValue && oldMemberTask.WorkEndDate.HasValue)
-                    {
-                        TimeSpan timeSpan = oldMemberTask.WorkEndDate.Value - oldMemberTask.WorkStartDate.Value;
-                        oldMemberTask.Duration = timeSpan.ToString();
-                    }
-
-                }
-
-                oldMemberTask.Comments = memberTask.Comments;
                 oldMemberTask.Remarks = memberTask.Remarks;
                 oldMemberTask.UpdatedBy = memberTask.UpdatedBy;
                 oldMemberTask.UpdatedDate = DateTime.Now;
@@ -96,11 +81,6 @@ namespace DemoTask.Service.Service
                 ProjectId = memberTask.ProjectId,
                 MemberId = memberTask.MemberId,
                 Status = memberTask.Status,
-                AssignDate = memberTask.AssignDate,
-                WorkStartDate = memberTask.WorkStartDate,
-                WorkEndDate = memberTask.WorkEndDate,
-                Duration = memberTask.Duration,
-                Comments = memberTask.Comments,
                 Remarks = memberTask.Remarks,
                 IsArchived = memberTask.IsArchived,
                 CreatedBy = memberTask.CreatedBy,
@@ -124,11 +104,6 @@ namespace DemoTask.Service.Service
                                       MemberId = memberTask.MemberId,
                                       MemberName = RepoUser.Get(r => r.UserName == memberTask.MemberId).FullName,
                                       Status = memberTask.Status,
-                                      AssignDate = memberTask.AssignDate,
-                                      WorkStartDate = memberTask.WorkStartDate,
-                                      WorkEndDate = memberTask.WorkEndDate,
-                                      Duration = memberTask.Duration,
-                                      Comments = memberTask.Comments,
                                       Remarks = memberTask.Remarks,
                                       IsArchived = memberTask.IsArchived,
                                       CreatedBy = memberTask.CreatedBy,
@@ -152,11 +127,6 @@ namespace DemoTask.Service.Service
                                       MemberId = memberTask.MemberId,
                                       MemberName = RepoUser.Get(r => r.UserName == memberTask.MemberId).FullName,
                                       Status = memberTask.Status,
-                                      AssignDate = memberTask.AssignDate,
-                                      WorkStartDate = memberTask.WorkStartDate,
-                                      WorkEndDate = memberTask.WorkEndDate,
-                                      Duration = memberTask.Duration,
-                                      Comments = memberTask.Comments,
                                       Remarks = memberTask.Remarks,
                                       IsArchived = memberTask.IsArchived,
                                       CreatedBy = memberTask.CreatedBy,
@@ -186,11 +156,6 @@ namespace DemoTask.Service.Service
                                       MemberId = memberTask.MemberId,
                                       MemberName = member?.FullName ?? "",
                                       Status = memberTask.Status,
-                                      AssignDate = memberTask.AssignDate,
-                                      WorkStartDate = memberTask.WorkStartDate,
-                                      WorkEndDate = memberTask.WorkEndDate,
-                                      Duration = memberTask.Duration,
-                                      Comments = memberTask.Comments,
                                       Remarks = memberTask.Remarks,
                                       IsArchived = memberTask.IsArchived,
                                       CreatedBy = memberTask.CreatedBy,

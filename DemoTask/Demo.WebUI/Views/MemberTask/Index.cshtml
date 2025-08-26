@@ -4,20 +4,17 @@
     ViewBag.Title = "Task";
 }
 <section class="innerSection clearfix">
-    <form class="form-inline" role="form" method="get" action="/MemberTask/">
+   @*  <form class="form-inline" role="form" method="get" action="/MemberTask/"> *@
         <div class="form-group">
             <label class="sr-only" for="exampleInputEmail2">Search By:</label>
         </div>
-        <div class="form-group">
-            <label class="sr-only">Search For:</label>
-            <input id="search" name="search" type="text" class="form-control" placeholder="Search For">
-        </div>
-        <button type="submit" class="btn btn-default btn-primary">Search</button>
        
-                    <a class="btn btn-default btn-primary add-new" href="/MemberTask/Create">
+        <button type="submit" class="btn btn-default btn-primary">Search</button>
+                 
+                    <a class="btn btn-default btn-primary add-new" href="/MemberTask/Create" id="addnewbtn">
                         <i class="fa fa-plus hidden-xs"></i>add new
-                    </a>
-    </form>
+                    </a> 
+@*     </form> *@
     <h3>Task information</h3>
     <table class="table demo dataTable" data-filter="#filter" data-page-size="20" id="tblMemberTask">
         <thead>
@@ -72,5 +69,6 @@
 
 @section Scripts{
     <script src="~/js/signalr.js"></script>
-    <script src="~/js/membertask.js"></script>
+     <script src="~/js/membertask.js"></script> 
+
 }
