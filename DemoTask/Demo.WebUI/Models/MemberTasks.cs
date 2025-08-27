@@ -14,5 +14,6 @@
         public string? Duration { get; set; }
         public string? Comments { get; set; }
         public string? Remarks { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }

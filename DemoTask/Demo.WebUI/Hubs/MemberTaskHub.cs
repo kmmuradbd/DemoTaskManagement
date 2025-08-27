@@ -8,7 +8,7 @@ using System.Net.Mail;
 
 namespace Demo.WebUI.Hubs
 {
-    public class MemberTaskHub:Hub
+    public class MemberTaskHub : Hub
     {
         MemberTaskDBQuery AppMemberTask;
         UserDBQuery AppUser;
@@ -29,25 +29,53 @@ namespace Demo.WebUI.Hubs
             var memberTasks = AppMemberTask.GetMemberTasks(userName, roleId);
             await Clients.All.SendAsync("ReceivedMemberTasks", memberTasks);
         }
-        
+
 
         public async Task SendUser()
         {
             var httpContext = Context.GetHttpContext();
-          string userName=  SessionHelper.GetObjectFromJson<string>(httpContext.Session, "userName");
+            string userName = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "userName");
             var userData = AppUser.GetUser(userName);
             await Clients.All.SendAsync("ReceivedUser", userData);
         }
+
+        public async Task SendMemberTaskLastUpdate()
+        {
+            var httpContext = Context.GetHttpContext();
+            string userName = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "userName");
+         //   string created = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "createdDate");
+
+           // DateTime createdDate = string.IsNullOrEmpty(created)
+           //? DateTime.Now
+           //: DateTime.Parse(created);
+            DateTime lastCreatedDate = NotificationCache.GetLastCreatedDate(userName) ?? DateTime.Now;
+
+            var memberLastTasks = AppMemberTask.GetMemberTaskLastUpdates(userName, lastCreatedDate);
+
+            //SessionHelper.SetObjectAsJson(httpContext.Session, "oldcreatedDate", createdDate);
+
+            //string latestCreatedDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // Example format
+            //SessionHelper.SetObjectAsJson(httpContext.Session, "createdDate", latestCreatedDate);
+            //if (memberLastTasks != null && memberLastTasks.Any())
+           // {
+                //DateTime latestCreated = memberLastTasks.Max(t => t.CreatedDate);
+                NotificationCache.SetLastCreatedDate(userName, lastCreatedDate);
+            //}
+
+            // Send updates to clients
+            await Clients.All.SendAsync("ReceivedMemberTaskLastUpdate", memberLastTasks);
+        }
+
 
         public async Task SendEmailNotification(string toEmail, string subject, string messageBody)
         {
             try
             {
-                var fromAddress = new MailAddress("mahmudabd1990@gmail.com", "Software Gaze");
+                var fromAddress = new MailAddress("test@gmail.com", "Software Gaze");
                 var toAddress = new MailAddress(toEmail);
 
                 // ⚠️ Use an App Password here, not your Gmail login password
-                const string fromPassword = "mahmuda1990@";
+                const string fromPassword = "*******";
 
                 using (var smtp = new SmtpClient("smtp.gmail.com", 587))
                 {

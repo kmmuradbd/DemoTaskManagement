@@ -14,7 +14,7 @@ namespace DemoTask.Service.Interface
         MemberTaskViewModel Get(int id);
         IEnumerable<MemberTaskViewModel> GetAll();
         IEnumerable<MemberTaskViewModel> GetAll(string memberId);
-        IEnumerable<MemberTaskViewModel> GetAll(DateTime createDate);
+        IEnumerable<MemberTaskViewModel> GetAll(string memberId, DateTime createDate);
         IEnumerable<MemberTaskViewModel> GetAllCretedBy(string createdBy);
     }
 }

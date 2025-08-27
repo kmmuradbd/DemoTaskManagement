@@ -8,7 +8,8 @@ $(function () {
 
 		InvokeMemberTask();
 		InvokeUsers();
-		InvokeEmailNotification();
+		InvokeMemberLastUpdate();
+		//InvokeEmailNotification();
 
     }).catch(function (err) {
         return console.error(err.toString());
@@ -48,15 +49,15 @@ function BindMemberTaskToGrid(memberTasks) {
 	});
 }
 
-function InvokeEmailNotification() {
-	connection.invoke("SendEmailNotification", "kmmuradbd@gmail.com", "Hello", "This is a test email")
-		.catch(function (err) {
-			return console.error(err.toString());
-		});
-}
-connection.on("EmailStatus", function (successMessage) {
-    console.log(successMessage);
-});
+//function InvokeEmailNotification() {
+//	connection.invoke("SendEmailNotification", "testy@gmail.com", "Hello", "This is a test email")
+//		.catch(function (err) {
+//			return console.error(err.toString());
+//		});
+//}
+//connection.on("EmailStatus", function (successMessage) {
+//    console.log(successMessage);
+//});
 
 // User
 function InvokeUsers() {
@@ -81,4 +82,21 @@ function BindUserButton(userData) {
 	}
 }
 
+function InvokeMemberLastUpdate() {
+	connection.invoke("SendMemberTaskLastUpdate").catch(function (err) {
+		return console.error(err.toString());
+	});
+}
 
+connection.on("ReceivedMemberTaskLastUpdate", function (memberLastTasks) {
+
+	BindNotification(memberLastTasks);
+
+});
+function BindNotification(memberLastTasks) {
+	if (memberLastTasks && memberLastTasks.length > 0) {
+		var count = parseInt($('span.count').html()) || 0;
+		count += memberLastTasks.length;  // add all new tasks
+		$('span.count').html(count);
+	}
+}

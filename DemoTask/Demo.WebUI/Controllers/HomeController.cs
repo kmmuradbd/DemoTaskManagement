@@ -1,8 +1,10 @@
 using Demo.WebUI.Helpers;
 using Demo.WebUI.Models;
 using DemoTask.Service.Interface;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.Http;
 
 namespace Demo.WebUI.Controllers
 {
@@ -10,10 +12,12 @@ namespace Demo.WebUI.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         protected readonly IMasterMenuService AppMasterMenu;
-        public HomeController(ILogger<HomeController> logger, IMasterMenuService masterMenu)
+        protected readonly IMemberTaskService AppMemberTask;
+        public HomeController(ILogger<HomeController> logger, IMasterMenuService masterMenu, IMemberTaskService appMemberTask)
         {
             _logger = logger;
             this.AppMasterMenu = masterMenu;
+            AppMemberTask = appMemberTask;
         }
 
         public IActionResult Index()
@@ -40,6 +44,19 @@ namespace Demo.WebUI.Controllers
                 throw;
             }
         }
+
+        public JsonResult GetNotificationContacts()
+        {
+           // string created = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "oldcreatedDate");
+            string userName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userName");
+            // DateTime createdDate = DateTime.Parse(created);
+            DateTime lastCreatedDate = NotificationCache.GetLastCreatedDate(userName) ?? DateTime.MinValue;
+
+            var Data = AppMemberTask.GetAll(userName, lastCreatedDate);
+
+            return Json(Data);
+        }
+
 
         public IActionResult Privacy()
         {

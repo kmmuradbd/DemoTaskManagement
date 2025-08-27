@@ -71,7 +71,7 @@ namespace Demo.WebUI.DBQuery
             }
         }
 
-        public List<MemberTasks> GetMemberTaskLastUpdates(string memberId, string createdDate)
+        public List<MemberTasks> GetMemberTaskLastUpdates(string memberId, DateTime createdDate)
         {
             List<MemberTasks> memberTasks = new List<MemberTasks>();
             MemberTasks memberTask;
@@ -89,22 +89,25 @@ namespace Demo.WebUI.DBQuery
 
             return memberTasks;
         }
-        private DataTable GetMemberTaskLastUpdateFromDb(string memberId, string createdDate)
+        private DataTable GetMemberTaskLastUpdateFromDb(string memberId, DateTime createdDate)
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+                
                 try
                 {
                     connection.Open();
-                    string sqlCommand = @"SELECT [Name] FROM [dbo].[MemberTasks] WHERE  MemberId =@MemberId and [CreatedDate] > @CreatedDate";
-                    // Use the stored procedure name instead of SQL query
+                    string sqlCommand = @"SELECT [Name],[Status],[CreatedDate]
+                                  FROM [dbo].[MemberTasks] 
+                                  WHERE MemberId = @MemberId 
+                                  AND [CreatedDate] > @CreatedDate";
+
                     using (SqlCommand command = new SqlCommand(sqlCommand, connection))
                     {
-                        command.CommandType = CommandType.StoredProcedure;
+                        command.CommandType = CommandType.Text; // ✅ since it's a query, not SP
 
-                        // Example: add parameters if the SP requires them
-                        command.Parameters.AddWithValue("@UserName", memberId);
+                        command.Parameters.AddWithValue("@MemberId", memberId);
                         command.Parameters.AddWithValue("@CreatedDate", createdDate);
 
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -115,16 +118,13 @@ namespace Demo.WebUI.DBQuery
 
                     return dataTable;
                 }
-                catch (Exception ex)
+                catch
                 {
-                    throw;
-                }
-                finally
-                {
-                    connection.Close();
+                    throw; // you can log ex here if needed
                 }
             }
         }
+
 
 
     }
