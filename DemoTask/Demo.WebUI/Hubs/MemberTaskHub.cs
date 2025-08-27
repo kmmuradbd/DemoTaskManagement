@@ -1,7 +1,10 @@
 ﻿using Demo.WebUI.DBQuery;
 using Demo.WebUI.Helpers;
+using Demo.WebUI.Models;
 using DemoTask.Domain.DomainObject;
 using Microsoft.AspNetCore.SignalR;
+using System.Net;
+using System.Net.Mail;
 
 namespace Demo.WebUI.Hubs
 {
@@ -19,9 +22,14 @@ namespace Demo.WebUI.Hubs
 
         public async Task SendMemberTasks()
         {
-            var memberTasks = AppMemberTask.GetMemberTasks();
+            var httpContext = Context.GetHttpContext();
+            string userName = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "userName");
+            string roleId = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "roleId");
+
+            var memberTasks = AppMemberTask.GetMemberTasks(userName, roleId);
             await Clients.All.SendAsync("ReceivedMemberTasks", memberTasks);
         }
+        
 
         public async Task SendUser()
         {
@@ -30,6 +38,44 @@ namespace Demo.WebUI.Hubs
             var userData = AppUser.GetUser(userName);
             await Clients.All.SendAsync("ReceivedUser", userData);
         }
+
+        public async Task SendEmailNotification(string toEmail, string subject, string messageBody)
+        {
+            try
+            {
+                var fromAddress = new MailAddress("mahmudabd1990@gmail.com", "Software Gaze");
+                var toAddress = new MailAddress(toEmail);
+
+                // ⚠️ Use an App Password here, not your Gmail login password
+                const string fromPassword = "mahmuda1990@";
+
+                using (var smtp = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    smtp.EnableSsl = true;
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential(fromAddress.Address, fromPassword);
+
+                    using (var message = new MailMessage(fromAddress, toAddress)
+                    {
+                        Subject = subject,
+                        Body = messageBody,
+                        IsBodyHtml = true
+                    })
+                    {
+                        await smtp.SendMailAsync(message);
+                    }
+                }
+                string successMessage = $"Email sent to {toEmail} successfully.";
+                await Clients.Caller.SendAsync("EmailStatus", successMessage);
+            }
+            catch (Exception ex)
+            {
+                await Clients.Caller.SendAsync("EmailStatus", $"Error sending email: {ex.Message}");
+            }
+        }
+
+
 
     }
 }

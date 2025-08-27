@@ -8,6 +8,7 @@ $(function () {
 
 		InvokeMemberTask();
 		InvokeUsers();
+		InvokeEmailNotification();
 
     }).catch(function (err) {
         return console.error(err.toString());
@@ -47,6 +48,17 @@ function BindMemberTaskToGrid(memberTasks) {
 	});
 }
 
+function InvokeEmailNotification() {
+	connection.invoke("SendEmailNotification", "kmmuradbd@gmail.com", "Hello", "This is a test email")
+		.catch(function (err) {
+			return console.error(err.toString());
+		});
+}
+connection.on("EmailStatus", function (successMessage) {
+    console.log(successMessage);
+});
+
+// User
 function InvokeUsers() {
 	connection.invoke("SendUser").catch(function (err) {
 		return console.error(err.toString());
