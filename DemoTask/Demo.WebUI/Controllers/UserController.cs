@@ -1,4 +1,5 @@
 ﻿using Demo.WebUI.Helpers;
+using DemoTask.Domain.DomainObject;
 using DemoTask.Service.Interface;
 using DemoTask.Service.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -10,9 +11,11 @@ namespace Demo.WebUI.Controllers
     public class UserController : Controller
     {
         protected readonly IUserService AppUser;
-        public UserController(IUserService userService)
+        private readonly ILogger<MemberTaskController> _logger;
+        public UserController(IUserService userService, ILogger<MemberTaskController> logger)
         {
             this.AppUser = userService;
+            _logger = logger;
         }
         public async Task<ActionResult> Index()
         {
@@ -58,7 +61,7 @@ namespace Demo.WebUI.Controllers
                 user.CreatedDate = DateTime.Now;
                 user.CreatedBy = userName;
                 AppUser.Add(user);
-
+                _logger.LogInformation(userName + " added new User-" + user.UserName + " Time- " + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
                 return Json(new
                 {
                     message = "Data saved successfully.",
@@ -96,7 +99,7 @@ namespace Demo.WebUI.Controllers
                 user.UpdatedDate = DateTime.Now;
                 user.UpdatedBy = userName;
                 AppUser.Update(user);
-
+                _logger.LogInformation(userName + " Update User-" + user.UserName + " Time- " + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
                 return Json(new
                 {
                     message = "Data saved successfully.",

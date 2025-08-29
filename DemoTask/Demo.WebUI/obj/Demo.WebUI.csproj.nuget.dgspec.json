@@ -79,6 +79,10 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "SqlTableDependency": {
               "target": "Package",
               "version": "[8.5.8, )"

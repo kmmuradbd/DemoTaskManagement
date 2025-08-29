@@ -487,5 +487,15 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtim
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\win-x86\native\sni.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
-D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\8q84o0ngex-luaibj2e5z.gz
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\icw6cpl6ur-h58ic811uh.gz
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.AspNetCore.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Sinks.File.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\8q84o0ngex-1dyoupgsz9.gz

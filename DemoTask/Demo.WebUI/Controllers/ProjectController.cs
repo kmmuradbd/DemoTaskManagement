@@ -1,4 +1,5 @@
 ﻿using Demo.WebUI.Helpers;
+using Demo.WebUI.Models;
 using DemoTask.Domain.DomainObject;
 using DemoTask.Service.Interface;
 using DemoTask.Service.ViewModel;
@@ -10,9 +11,11 @@ namespace Demo.WebUI.Controllers
     public class ProjectController : Controller
     {
         protected readonly IProjectService AppProject;
-        public ProjectController(IProjectService project)
+        private readonly ILogger<MemberTaskController> _logger;
+        public ProjectController(IProjectService project, ILogger<MemberTaskController> logger)
         {
             this.AppProject = project;
+            _logger = logger;
         }
         // GET: Project
         public ActionResult Index()
@@ -72,6 +75,7 @@ namespace Demo.WebUI.Controllers
                 project.CreatedDate = DateTime.Now;
                 project.CreatedBy = userName;
                 AppProject.Add(project);
+                _logger.LogInformation(userName + " added new Project-" + project.Name + " Time- " + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
 
                 return Json(new
                 {
@@ -108,7 +112,7 @@ namespace Demo.WebUI.Controllers
                 project.UpdatedDate = DateTime.Now;
                 project.UpdatedBy = userName;
                 AppProject.Update(project);
-
+                _logger.LogInformation(userName + " Update Project-" + project.Name + " Time- " + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
                 return Json(new
                 {
                     message = "Data saved successfully.",

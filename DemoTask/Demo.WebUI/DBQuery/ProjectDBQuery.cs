@@ -13,12 +13,12 @@ namespace Demo.WebUI.DBQuery
             this.connectionString = connectionString;
         }
 
-        public List<Projects> GetProjects()
+        public List<Projects> GetProjects(string memberId, string roleId)
         {
             List<Projects> projects = new List<Projects>();
             Projects project;
 
-            var data = GetProjectDetailsFromDb();
+            var data = GetProjectDetailsFromDb(memberId, roleId);
 
             foreach (DataRow row in data.Rows)
             {
@@ -36,7 +36,7 @@ namespace Demo.WebUI.DBQuery
 
             return projects;
         }
-        private DataTable GetProjectDetailsFromDb()
+        private DataTable GetProjectDetailsFromDb(string memberId, string roleId)
         {
             DataTable dataTable = new DataTable();
 
@@ -51,8 +51,8 @@ namespace Demo.WebUI.DBQuery
                     {
                         command.CommandType = CommandType.StoredProcedure;
 
-                        // Example: add parameters if the SP requires them
-                        // command.Parameters.AddWithValue("@ManagerId", managerId);
+                        command.Parameters.AddWithValue("@UserName", memberId);
+                        command.Parameters.AddWithValue("@RoleId", roleId);
 
                         using (SqlDataReader reader = command.ExecuteReader())
                         {

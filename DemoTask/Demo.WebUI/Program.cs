@@ -8,6 +8,7 @@ using DemoTask.Infrastructure.Context.Repository;
 using DemoTask.Service.Interface;
 using DemoTask.Service.Service;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DemoTaskContext>(options =>
@@ -44,7 +45,11 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromMinutes(30); // Optional: session timeout
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
-}); builder.Services.AddMemoryCache();
+}); 
+builder.Services.AddMemoryCache();
+var logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).Enrich.FromLogContext().CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 
 builder.Services.AddHttpContextAccessor();
 

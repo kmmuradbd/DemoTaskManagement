@@ -59,14 +59,9 @@ namespace DemoTask.Service.Service
             }
             catch (Exception ex)
             {
-                if (ex.InnerException.InnerException.Message.Contains("IX_MemberTaskName"))
-                {
-                    throw new Exception("This Name(" + memberTask.Name + ") is already exists");
-                }
-                else
-                {
-                    throw new Exception(ex.Message);
-                }
+
+                throw new Exception(ex.Message);
+
             }
         }
 
@@ -115,7 +110,7 @@ namespace DemoTask.Service.Service
         }
         public IEnumerable<MemberTaskViewModel> GetAll(string memberId)
         {
-            var memberTaskList = (from memberTask in RepoMemberTask.GetAll(r =>r.MemberId== memberId && !r.IsArchived)
+            var memberTaskList = (from memberTask in RepoMemberTask.GetAll(r => r.MemberId == memberId && !r.IsArchived)
                                   orderby memberTask.Name
                                   select new MemberTaskViewModel()
                                   {

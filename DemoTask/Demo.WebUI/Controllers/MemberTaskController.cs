@@ -9,9 +9,11 @@ namespace Demo.WebUI.Controllers
     public class MemberTaskController : Controller
     {
         protected readonly IMemberTaskService AppMemberTask;
-        public MemberTaskController(IMemberTaskService memberTask)
+        private readonly ILogger<MemberTaskController> _logger;
+        public MemberTaskController(IMemberTaskService memberTask, ILogger<MemberTaskController> logger)
         {
             this.AppMemberTask = memberTask;
+            _logger = logger;
         }
         public ActionResult Index()
         {
@@ -57,6 +59,7 @@ namespace Demo.WebUI.Controllers
                 memberTask.CreatedDate = DateTime.Now;
                 memberTask.CreatedBy = userName;
                 AppMemberTask.Add(memberTask);
+                _logger.LogInformation(userName+" added new task-"+ memberTask.Name+" Time- "+DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
 
                 return Json(new
                 {
@@ -94,6 +97,7 @@ namespace Demo.WebUI.Controllers
                 memberTask.UpdatedBy = userName;
                
                 AppMemberTask.Update(memberTask);
+                _logger.LogInformation(userName + " Update task " + memberTask.Name + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
 
                 return Json(new
                 {

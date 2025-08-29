@@ -43,24 +43,11 @@ namespace Demo.WebUI.Hubs
         {
             var httpContext = Context.GetHttpContext();
             string userName = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "userName");
-         //   string created = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "createdDate");
-
-           // DateTime createdDate = string.IsNullOrEmpty(created)
-           //? DateTime.Now
-           //: DateTime.Parse(created);
             DateTime lastCreatedDate = NotificationCache.GetLastCreatedDate(userName) ?? DateTime.Now;
 
             var memberLastTasks = AppMemberTask.GetMemberTaskLastUpdates(userName, lastCreatedDate);
 
-            //SessionHelper.SetObjectAsJson(httpContext.Session, "oldcreatedDate", createdDate);
-
-            //string latestCreatedDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); // Example format
-            //SessionHelper.SetObjectAsJson(httpContext.Session, "createdDate", latestCreatedDate);
-            //if (memberLastTasks != null && memberLastTasks.Any())
-           // {
-                //DateTime latestCreated = memberLastTasks.Max(t => t.CreatedDate);
                 NotificationCache.SetLastCreatedDate(userName, lastCreatedDate);
-            //}
 
             // Send updates to clients
             await Clients.All.SendAsync("ReceivedMemberTaskLastUpdate", memberLastTasks);

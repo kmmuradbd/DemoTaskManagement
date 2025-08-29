@@ -1,4 +1,6 @@
 ﻿using Demo.WebUI.DBQuery;
+using Demo.WebUI.Helpers;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.SignalR;
 
 namespace Demo.WebUI.Hubs
@@ -15,7 +17,10 @@ namespace Demo.WebUI.Hubs
 
         public async Task SendProjects()
         {
-            var projects = AppProject.GetProjects();
+            var httpContext = Context.GetHttpContext();
+            string userName = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "userName");
+            string roleId = SessionHelper.GetObjectFromJson<string>(httpContext.Session, "roleId");
+            var projects = AppProject.GetProjects(userName, roleId);
             await Clients.All.SendAsync("ReceivedProjects", projects);
 
         }
