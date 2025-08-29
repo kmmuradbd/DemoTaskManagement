@@ -1,3 +1,4 @@
+using Demo.WebUI.CustomMiddleware;
 using Demo.WebUI.Helpers;
 using Demo.WebUI.Models;
 using DemoTask.Service.Interface;
@@ -13,11 +14,13 @@ namespace Demo.WebUI.Controllers
         private readonly ILogger<HomeController> _logger;
         protected readonly IMasterMenuService AppMasterMenu;
         protected readonly IMemberTaskService AppMemberTask;
-        public HomeController(ILogger<HomeController> logger, IMasterMenuService masterMenu, IMemberTaskService appMemberTask)
+        private readonly OnlineUsersService _onlineUsers;
+        public HomeController(ILogger<HomeController> logger, IMasterMenuService masterMenu, IMemberTaskService appMemberTask, OnlineUsersService onlineUsersService)
         {
             _logger = logger;
             this.AppMasterMenu = masterMenu;
             AppMemberTask = appMemberTask;
+            _onlineUsers = onlineUsersService;
         }
 
         public IActionResult Index()
@@ -35,7 +38,8 @@ namespace Demo.WebUI.Controllers
                 {
                     var data = AppMasterMenu.GetAll(userName);
                     SessionHelper.SetObjectAsJson(HttpContext.Session, "menu", data);
-                    return View();
+                    var users = _onlineUsers.GetUsers();
+                    return View(users);
                 }
             }
             catch (Exception)

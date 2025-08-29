@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Dictionary<string, DateTime>
+@{
     ViewBag.Title = "Home";
 }
 
@@ -143,7 +144,38 @@
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 text-center">
             <div class="erp-module">
-                <div id="piechartqqqq" class="chart-border"></div>
+                <div class="table-responsive">
+                    <table id="gvDataList" class="table demo dataTable" data-filter="#filter" data-page-size="20">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center;padding-top:10px;">
+                                    User
+                                </th>
+                                <th style="text-align:center;padding-top:10px;">
+                                    Status
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null)
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.Raw(item)
+                                        </td>
+                                        <td style="color:green; font-weight:900;">
+                                            Online
+                                        </td>
+
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

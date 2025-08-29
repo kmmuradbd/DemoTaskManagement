@@ -1,3 +1,4 @@
+using Demo.WebUI.CustomMiddleware;
 using Demo.WebUI.Hubs;
 using Demo.WebUI.MiddlewareExtensions;
 using Demo.WebUI.SubscribeTableDependencies;
@@ -35,6 +36,7 @@ builder.Services.AddSingleton<MemberTaskHub>();
 builder.Services.AddSingleton<SubscribeMemberTaskTableDependency>();
 builder.Services.AddSingleton<SubscribeUserTableDependency>();
 builder.Services.AddSingleton<SubscribeMemberTaskLastUpdateTableDependency>();
+builder.Services.AddSingleton<OnlineUsersService>();
 
 
 
@@ -52,8 +54,10 @@ builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
+//app.UseMiddleware<OnlineUsersMiddleware>();
 var connectionString = app.Configuration.GetConnectionString("TMConnection");
 
 // Configure the HTTP request pipeline.

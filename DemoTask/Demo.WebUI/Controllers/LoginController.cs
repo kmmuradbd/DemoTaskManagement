@@ -1,7 +1,10 @@
-﻿using Demo.WebUI.Helpers;
+﻿using Demo.WebUI.CustomMiddleware;
+using Demo.WebUI.Helpers;
+using DemoTask.Domain.DomainObject;
 using DemoTask.Infrastructure.Context;
 using DemoTask.Service.Interface;
 using DemoTask.Service.ViewModel;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.WebUI.Controllers
@@ -10,11 +13,13 @@ namespace Demo.WebUI.Controllers
     {
         private readonly IUserService userService;
         private readonly ILogger<HomeController> _logger;
+        private readonly OnlineUsersService _userCache;
 
-        public LoginController(ILogger<HomeController> logger, IUserService user)
+        public LoginController(ILogger<HomeController> logger, IUserService user, OnlineUsersService onlineUsers)
         {
             _logger = logger;
             this.userService = user;
+            _userCache = onlineUsers;
         }
         public IActionResult Index()
         {
@@ -43,8 +48,10 @@ namespace Demo.WebUI.Controllers
                                                                  );
                // HttpContext.Application["BasicTicket" + username] = basicTicket;
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "userName", user.UserName);
+                SessionHelper.SetObjectAsJson(HttpContext.Session, "userFullName", isAuthenticated.FullName);
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "isSysAdmin", isSysAdmin);
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "roleId", isAuthenticated.UserRoleMasterId);
+                _userCache.AddUser(isAuthenticated.FullName);
                 return RedirectToAction("Index", "Home");
                 
             }
@@ -54,5 +61,16 @@ namespace Demo.WebUI.Controllers
                      "UserName or Password Wrong", "failure"), "application/javascript");
             }
         }
+
+        #region Logout
+        public ActionResult Logout()
+        {
+            string userName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userFullName");
+            _userCache.RemoveUser(userName);
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Login");
+        }
+
+        #endregion
     }
 }
