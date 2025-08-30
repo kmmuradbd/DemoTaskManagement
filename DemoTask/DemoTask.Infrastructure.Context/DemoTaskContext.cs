@@ -24,7 +24,9 @@ namespace DemoTask.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.Entity<User>().ToTable(tb => tb.UseSqlOutputClause(false));
+            modelBuilder.Entity<MemberTask>().ToTable(tb => tb.UseSqlOutputClause(false));
+            modelBuilder.Entity<Project>().ToTable(tb => tb.UseSqlOutputClause(false));
         }
     }
 }

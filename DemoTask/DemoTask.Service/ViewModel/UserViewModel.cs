@@ -25,6 +25,8 @@ namespace DemoTask.Service.ViewModel
         public int UserRoleMasterId { get; set; }
         public string RoleName { get; set; }
         public string UserName { get; set; }
+        [Required(ErrorMessage ="Email is required.")]
+        public string Email { get; set; }
         public User ToEntity()
         {
             User user = new User();
@@ -33,6 +35,7 @@ namespace DemoTask.Service.ViewModel
             user.UserName = this.UserName;
             user.Password = this.Password;
             user.UserRoleMasterId = this.UserRoleMasterId;
+            user.Email = this.Email;
             user.IsActive = this.IsActive;
             user.IsArchived = this.IsArchived;
             user.CreatedBy = this.CreatedBy;

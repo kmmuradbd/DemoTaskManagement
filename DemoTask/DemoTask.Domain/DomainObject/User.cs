@@ -14,5 +14,6 @@ namespace DemoTask.Domain.DomainObject
         public string UserName { get; set; }
         public string Password { get; set; }
         public int UserRoleMasterId { get; set; }
+        public string Email { get; set; }
     }
 }

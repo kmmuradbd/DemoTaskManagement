@@ -1,4 +1,5 @@
-﻿using Demo.WebUI.Helpers;
+﻿using Demo.WebUI.CustomMiddleware;
+using Demo.WebUI.Helpers;
 using Demo.WebUI.Models;
 using DemoTask.Domain.DomainObject;
 using DemoTask.Service.Interface;
@@ -12,10 +13,14 @@ namespace Demo.WebUI.Controllers
     {
         protected readonly IProjectService AppProject;
         private readonly ILogger<MemberTaskController> _logger;
-        public ProjectController(IProjectService project, ILogger<MemberTaskController> logger)
+        private readonly IUserService AppUser; 
+        private readonly EmailService _emailService;
+        public ProjectController(IProjectService project, ILogger<MemberTaskController> logger, IUserService appUser, EmailService emailService)
         {
             this.AppProject = project;
             _logger = logger;
+            AppUser = appUser;
+            _emailService = emailService;
         }
         // GET: Project
         public ActionResult Index()
@@ -77,6 +82,13 @@ namespace Demo.WebUI.Controllers
                 AppProject.Add(project);
                 _logger.LogInformation(userName + " added new Project-" + project.Name + " Time- " + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
 
+                var user = AppUser.Get(project.ManagerId);
+                string userFullName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userFullName");
+                string message = "Dear " + user.FullName + ",\r\n" +
+                    "Congratulations! " + userFullName + " added a new project (" + project.Name + ") for you.\r\n\n Regards and Thanks,\r\n Software Gaze Team";
+                _emailService.SendEmailAsync(user.Email, "Task Notification", message);
+
+
                 return Json(new
                 {
                     message = "Data saved successfully.",
@@ -113,6 +125,14 @@ namespace Demo.WebUI.Controllers
                 project.UpdatedBy = userName;
                 AppProject.Update(project);
                 _logger.LogInformation(userName + " Update Project-" + project.Name + " Time- " + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
+
+                var user = AppUser.Get(project.ManagerId);
+                string userFullName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userFullName");
+                string message = "Dear " + user.FullName + ",\r\n" +
+                    "Congratulations! " + userFullName + " Update project (" + project.Name + ") for you.\r\n\n Regards and Thanks,\r\n Software Gaze Team";
+                _emailService.SendEmailAsync(user.Email, "Task Notification", message);
+
+
                 return Json(new
                 {
                     message = "Data saved successfully.",

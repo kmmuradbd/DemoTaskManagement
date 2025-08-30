@@ -499,3 +499,6 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilo
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\Serilog.Sinks.File.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compressed\8q84o0ngex-1dyoupgsz9.gz
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\MailKit.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\MimeKit.dll

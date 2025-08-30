@@ -53,6 +53,7 @@ namespace DemoTask.Service.Service
                 oldUser.FullName = user.FullName;
                 oldUser.Password =Common.HashCode(user.Password);
                 oldUser.UserRoleMasterId = user.UserRoleMasterId;
+                oldUser.Email= user.Email;
                 oldUser.IsActive = user.IsActive;
                 oldUser.UpdatedBy = user.UpdatedBy;
                 oldUser.UpdatedDate = user.UpdatedDate;
@@ -81,6 +82,7 @@ namespace DemoTask.Service.Service
                 Id = user.Id,
                 FullName = user.FullName,
                 Password = user.Password,
+                Email = user.Email,
                 IsActive = user.IsActive,
                 IsArchived = user.IsArchived,
                 CreatedBy = user.CreatedBy,
@@ -89,6 +91,26 @@ namespace DemoTask.Service.Service
                 UpdatedDate = user.UpdatedDate,
                 UserName = user.UserName,
                 UserRoleMasterId=user.UserRoleMasterId
+            };
+        }
+
+        public UserViewModel Get(string  memberId)
+        {
+            var user = RepoUser.Get(r => r.UserName == memberId && !r.IsArchived);
+            return new UserViewModel
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Password = user.Password,
+                Email = user.Email,
+                IsActive = user.IsActive,
+                IsArchived = user.IsArchived,
+                CreatedBy = user.CreatedBy,
+                CreatedDate = user.CreatedDate,
+                UpdatedBy = user.UpdatedBy,
+                UpdatedDate = user.UpdatedDate,
+                UserName = user.UserName,
+                UserRoleMasterId = user.UserRoleMasterId
             };
         }
 
@@ -102,6 +124,7 @@ namespace DemoTask.Service.Service
                                 Id = user.Id,
                                 FullName = user.FullName,
                                 Password = user.Password,
+                                Email = user.Email,
                                 IsActive = user.IsActive,
                                 IsArchived = user.IsArchived,
                                 CreatedBy = user.CreatedBy,
@@ -118,9 +141,9 @@ namespace DemoTask.Service.Service
 
         public UserViewModel? Login(string userName, string password)
         {
-            string passwordHash = Common.HashCode(password); // In real scenarios, hash the password before comparison
+            string passwordHash = Common.HashCode(password); 
             var user = RepoUser.Get(r => r.UserName == userName
-                                      && r.Password == passwordHash   // ⚠️ Ideally this should be hashed
+                                      && r.Password == passwordHash   
                                       && r.IsActive);
 
             if (user == null)
@@ -128,7 +151,6 @@ namespace DemoTask.Service.Service
                 return null;
             }
 
-            // Map the User entity to UserViewModel (exclude password!)
             return new UserViewModel
             {
                 Id = user.Id,
@@ -138,7 +160,8 @@ namespace DemoTask.Service.Service
                 CreatedBy = user.CreatedBy,
                 CreatedDate = user.CreatedDate,
                 FullName = user.FullName,
-                UserName = user.UserName   // ✅ Add this if needed
+                UserName = user.UserName,
+                Email= user.Email
             };
         }
 

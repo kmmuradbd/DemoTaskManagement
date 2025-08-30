@@ -9,6 +9,7 @@ using DemoTask.Infrastructure.Context.Repository;
 using DemoTask.Service.Interface;
 using DemoTask.Service.Service;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,6 +38,7 @@ builder.Services.AddSingleton<SubscribeMemberTaskTableDependency>();
 builder.Services.AddSingleton<SubscribeUserTableDependency>();
 builder.Services.AddSingleton<SubscribeMemberTaskLastUpdateTableDependency>();
 builder.Services.AddSingleton<OnlineUsersService>();
+builder.Services.AddSingleton<EmailService>();
 
 
 

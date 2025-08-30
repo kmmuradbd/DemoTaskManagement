@@ -36,6 +36,9 @@
                 <th>
                     @Html.LabelFor(r => Model.First().RoleName)
                 </th>
+                <th>
+                    @Html.LabelFor(r => Model.First().Email)
+                </th>
                 <th data-sort-ignore="true">
                     @Html.LabelFor(r => Model.First().IsActive)
                 </th>
@@ -60,6 +63,9 @@
                     <td>@(item.Password != null ? new string('*', item.Password.Length) : "")</td>
                     <td>
                         @Html.Raw(item.RoleName)
+                    </td>
+                    <td>
+                        @Html.Raw(item.Email)
                     </td>
                     <td>
                         @(item.IsActive ? "True" : "Inactive")

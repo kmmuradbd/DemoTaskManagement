@@ -1,4 +1,5 @@
-﻿using Demo.WebUI.Helpers;
+﻿using Demo.WebUI.CustomMiddleware;
+using Demo.WebUI.Helpers;
 using DemoTask.Domain.DomainObject;
 using DemoTask.Service.Interface;
 using DemoTask.Service.ViewModel;
@@ -10,15 +11,20 @@ namespace Demo.WebUI.Controllers
     {
         protected readonly IMemberTaskService AppMemberTask;
         private readonly ILogger<MemberTaskController> _logger;
-        public MemberTaskController(IMemberTaskService memberTask, ILogger<MemberTaskController> logger)
+        private readonly EmailService _emailService;
+        private readonly IUserService AppUser;
+        public MemberTaskController(IMemberTaskService memberTask, ILogger<MemberTaskController> logger, EmailService emailService, IUserService appUser)
         {
             this.AppMemberTask = memberTask;
             _logger = logger;
+            _emailService = emailService;
+            AppUser = appUser;
         }
         public ActionResult Index()
         {
             try
             {
+              
                 IEnumerable<MemberTaskViewModel> memberTasks = null;
                 string userName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userName");
                 string roleId= SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "roleId");
@@ -55,11 +61,20 @@ namespace Demo.WebUI.Controllers
         {
             try
             {
+                
+
                 string userName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userName");
                 memberTask.CreatedDate = DateTime.Now;
                 memberTask.CreatedBy = userName;
                 AppMemberTask.Add(memberTask);
                 _logger.LogInformation(userName+" added new task-"+ memberTask.Name+" Time- "+DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
+               
+                var user = AppUser.Get(memberTask.MemberId);
+                string userFullName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userFullName");
+                string message = "Dear " + user.FullName + ",\r\n" +
+                    "Congratulations! " + userFullName + " added a new task (" + memberTask.Name + ") for you.\r\n\n Regards and Thanks,\r\n Software Gaze Team";
+                _emailService.SendEmailAsync(user.Email, "Task Notification", message);
+
 
                 return Json(new
                 {
@@ -98,6 +113,13 @@ namespace Demo.WebUI.Controllers
                
                 AppMemberTask.Update(memberTask);
                 _logger.LogInformation(userName + " Update task " + memberTask.Name + DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss tt"));
+
+                var user = AppUser.Get(memberTask.MemberId);
+                string userFullName = SessionHelper.GetObjectFromJson<string>(HttpContext.Session, "userFullName");
+                string message = "Dear " + user.FullName + ",\r\n" +
+                    "Congratulations! " + userFullName + " Updated task (" + memberTask.Name + ") for you.\r\n\n Regards and Thanks,\r\n Software Gaze Team";
+                _emailService.SendEmailAsync(user.Email, "Task Notification", message);
+
 
                 return Json(new
                 {

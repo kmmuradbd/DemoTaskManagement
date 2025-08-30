@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DemoTask.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ae5734542f5454d8a2adcc983a84dfd450a99c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c618a13d0fa614bcf332a67380578deeba12a6b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DemoTask.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DemoTask.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
