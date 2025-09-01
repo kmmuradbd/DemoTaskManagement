@@ -1,0 +1,320 @@
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_natural-death.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_active-policies.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\sourcesanspro-semibold-webfont.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\FontAwesome.otf
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery-2.1.1.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\LICENSE.txt
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\timepicki.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\style.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\select2.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_distribution-house.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\select2.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate.unobtrusive.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_submitted.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\datepicker.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\selectyze.jquery.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery-2.1.1.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\bootstrap-datepicker.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\footable-demos.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\project.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery-2.1.1.min.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\moment.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\custom-boostrap.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\favicon.ico
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\footable.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\bootstrap.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\uy.script.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_region.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\fullcalendar.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_active.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\dist\jquery.min.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\sourcesanspro-regular-webfont.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_hospitalization.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.nicescroll.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\bootstrap.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_area.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_critical-illness.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\uy-style.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\site.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_balance.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\membertask.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\style.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery-2.1.1.intellisense.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery-3.6.0.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_total-limit.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\sourcesanspro-light-webfont.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\fullcalendar.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\dist\jquery.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\dropzone.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.unobtrusive-ajax.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\_references.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\custom-datetime-validate.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_settled.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.nicescroll.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\dropzone-basic.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation\LICENSE.md
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\footable.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.unobtrusive-ajax.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\selectyze.jquery.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\select2.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\timepicki.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\dist\jquery.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_accidental-death.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\footable.sort.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\UserLogin.txt
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_availed.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.cookie.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_reject.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate.unobtrusive.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\signalr.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\fontawesome-webfont.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\font-awesome.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\ess-style.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\Site.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\sourcesanspro-bold-webfont.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate-vsdoc.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\dropzone.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_close-user.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_out-patient.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_distribution-point.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\selectyze.jquery.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\signalr.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_pending-policies.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\jquery.validate.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\footable.paginate.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\fonts\glyphicons-halflings-regular.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\js\moment.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\select2.min.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_coverage.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_close-policies.svg
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\css\footable.core.css
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\wwwroot\images\icons\icon_accidental-hospitalize.svg
+wwwroot\css\bootstrap.css
+wwwroot\css\custom-boostrap.css
+wwwroot\css\datepicker.css
+wwwroot\css\dropzone.css
+wwwroot\css\dropzone-basic.css
+wwwroot\css\ess-style.css
+wwwroot\css\font-awesome.css
+wwwroot\css\footable.core.css
+wwwroot\css\footable-demos.css
+wwwroot\css\fullcalendar.css
+wwwroot\css\select2.css
+wwwroot\css\select2.min.css
+wwwroot\css\selectyze.jquery.css
+wwwroot\css\Site.css
+wwwroot\css\style.css
+wwwroot\css\style.css.map
+wwwroot\css\timepicki.css
+wwwroot\css\UserLogin.txt
+wwwroot\css\uy-style.css
+wwwroot\favicon.ico
+wwwroot\fonts\FontAwesome.otf
+wwwroot\fonts\fontawesome-webfont.eot
+wwwroot\fonts\fontawesome-webfont.svg
+wwwroot\fonts\fontawesome-webfont.ttf
+wwwroot\fonts\fontawesome-webfont.woff
+wwwroot\fonts\footable.eot
+wwwroot\fonts\footable.svg
+wwwroot\fonts\footable.ttf
+wwwroot\fonts\footable.woff
+wwwroot\fonts\glyphicons-halflings-regular.eot
+wwwroot\fonts\glyphicons-halflings-regular.svg
+wwwroot\fonts\glyphicons-halflings-regular.ttf
+wwwroot\fonts\glyphicons-halflings-regular.woff
+wwwroot\fonts\sourcesanspro-bold-webfont.eot
+wwwroot\fonts\sourcesanspro-bold-webfont.svg
+wwwroot\fonts\sourcesanspro-bold-webfont.ttf
+wwwroot\fonts\sourcesanspro-bold-webfont.woff
+wwwroot\fonts\sourcesanspro-bold-webfont.woff2
+wwwroot\fonts\sourcesanspro-light-webfont.eot
+wwwroot\fonts\sourcesanspro-light-webfont.svg
+wwwroot\fonts\sourcesanspro-light-webfont.ttf
+wwwroot\fonts\sourcesanspro-light-webfont.woff
+wwwroot\fonts\sourcesanspro-light-webfont.woff2
+wwwroot\fonts\sourcesanspro-regular-webfont.eot
+wwwroot\fonts\sourcesanspro-regular-webfont.svg
+wwwroot\fonts\sourcesanspro-regular-webfont.ttf
+wwwroot\fonts\sourcesanspro-regular-webfont.woff
+wwwroot\fonts\sourcesanspro-regular-webfont.woff2
+wwwroot\fonts\sourcesanspro-semibold-webfont.eot
+wwwroot\fonts\sourcesanspro-semibold-webfont.svg
+wwwroot\fonts\sourcesanspro-semibold-webfont.ttf
+wwwroot\fonts\sourcesanspro-semibold-webfont.woff
+wwwroot\fonts\sourcesanspro-semibold-webfont.woff2
+wwwroot\images\bat-bg.jpg
+wwwroot\images\icons\icon_accidental-death.svg
+wwwroot\images\icons\icon_accidental-hospitalize.svg
+wwwroot\images\icons\icon_active.svg
+wwwroot\images\icons\icon_active-policies.svg
+wwwroot\images\icons\icon_area.svg
+wwwroot\images\icons\icon_availed.svg
+wwwroot\images\icons\icon_balance.svg
+wwwroot\images\icons\icon_close-policies.svg
+wwwroot\images\icons\icon_close-user.svg
+wwwroot\images\icons\icon_coverage.svg
+wwwroot\images\icons\icon_critical-illness.svg
+wwwroot\images\icons\icon_distribution-house.svg
+wwwroot\images\icons\icon_distribution-point.svg
+wwwroot\images\icons\icon_hospitalization.svg
+wwwroot\images\icons\icon_natural-death.svg
+wwwroot\images\icons\icon_out-patient.svg
+wwwroot\images\icons\icon_pending-policies.svg
+wwwroot\images\icons\icon_region.svg
+wwwroot\images\icons\icon_reject.svg
+wwwroot\images\icons\icon_settled.svg
+wwwroot\images\icons\icon_submitted.svg
+wwwroot\images\icons\icon_total-limit.svg
+wwwroot\images\logo.png
+wwwroot\js\_references.js
+wwwroot\js\bootstrap.js
+wwwroot\js\bootstrap-datepicker.js
+wwwroot\js\custom-datetime-validate.js
+wwwroot\js\dropzone.js
+wwwroot\js\footable.js
+wwwroot\js\footable.paginate.js
+wwwroot\js\footable.sort.js
+wwwroot\js\fullcalendar.js
+wwwroot\js\jquery.cookie.js
+wwwroot\js\jquery.nicescroll.js
+wwwroot\js\jquery.nicescroll.min.js
+wwwroot\js\jquery.unobtrusive-ajax.js
+wwwroot\js\jquery.unobtrusive-ajax.min.js
+wwwroot\js\jquery.validate.js
+wwwroot\js\jquery.validate.min.js
+wwwroot\js\jquery.validate.unobtrusive.js
+wwwroot\js\jquery.validate.unobtrusive.min.js
+wwwroot\js\jquery.validate-vsdoc.js
+wwwroot\js\jquery-2.1.1.intellisense.js
+wwwroot\js\jquery-2.1.1.js
+wwwroot\js\jquery-2.1.1.min.js
+wwwroot\js\jquery-2.1.1.min.map
+wwwroot\js\jquery-3.6.0.min.js
+wwwroot\js\membertask.js
+wwwroot\js\moment.js
+wwwroot\js\moment.min.js
+wwwroot\js\project.js
+wwwroot\js\select2.js
+wwwroot\js\select2.min.js
+wwwroot\js\selectyze.jquery.js
+wwwroot\js\selectyze.jquery.min.js
+wwwroot\js\signalr.js
+wwwroot\js\signalr.min.js
+wwwroot\js\site.js
+wwwroot\js\timepicki.js
+wwwroot\js\uy.script.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\controllers\\membertaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\controllers\\membertaskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|d:\\github project\\demotaskmanagement\\demotask\\demo.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA3FDD7-CAC9-42FF-A0F9-3DF822FD5AE2}|Demo.WebUI\\Demo.WebUI.csproj|solutionrelative:demo.webui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,45 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\Controllers\\ProjectController.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "Demo.WebUI\\Controllers\\ProjectController.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAuwIcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T06:07:26.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Demo.WebUI\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T06:05:08.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MemberTaskController.cs",
-              "DocumentMoniker": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Controllers\\MemberTaskController.cs",
-              "RelativeDocumentMoniker": "Demo.WebUI\\Controllers\\MemberTaskController.cs",
-              "ToolTip": "D:\\GitHub Project\\DemoTaskManagement\\DemoTask\\Demo.WebUI\\Controllers\\MemberTaskController.cs",
-              "RelativeToolTip": "Demo.WebUI\\Controllers\\MemberTaskController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAwwEoAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T06:01:17.383Z",
-              "EditorCaption": ""
             }
           ]
         }

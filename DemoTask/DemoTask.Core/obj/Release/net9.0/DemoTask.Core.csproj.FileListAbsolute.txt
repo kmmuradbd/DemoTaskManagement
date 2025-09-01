@@ -1,0 +1,13 @@
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\bin\Release\net9.0\DemoTask.Core.deps.json
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\bin\Release\net9.0\DemoTask.Core.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\bin\Release\net9.0\DemoTask.Core.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.csproj.AssemblyReference.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.AssemblyInfoInputs.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.AssemblyInfo.cs
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.csproj.CoreCompileInputs.cache
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.sourcelink.json
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\refint\DemoTask.Core.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\DemoTask.Core.pdb
+D:\GitHub Project\DemoTaskManagement\DemoTask\DemoTask.Core\obj\Release\net9.0\ref\DemoTask.Core.dll

@@ -11,6 +11,7 @@ using DemoTask.Service.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DemoTaskContext>(options =>
@@ -51,9 +52,17 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 }); 
 builder.Services.AddMemoryCache();
+builder.Host.UseSerilog((context, services, configuration) => configuration
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .MinimumLevel.Override("System", LogEventLevel.Warning)
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+);
 var logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).Enrich.FromLogContext().CreateLogger();
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
+
 
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddMemoryCache();

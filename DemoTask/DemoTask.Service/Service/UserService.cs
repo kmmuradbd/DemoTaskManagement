@@ -27,7 +27,7 @@ namespace DemoTask.Service.Service
             try
             {
                 user.Id = RepoUser.GetAutoNumber();
-                user.Password= Common.HashCode(user.Password);
+                user.Password= Common.Encrypt(user.Password);
                 RepoUser.Add(user.ToEntity());
             }
             catch (Exception ex)
@@ -51,7 +51,7 @@ namespace DemoTask.Service.Service
                 UserViewModel oldUser = Get(user.Id);
 
                 oldUser.FullName = user.FullName;
-                oldUser.Password =Common.HashCode(user.Password);
+                oldUser.Password =Common.Encrypt(user.Password);
                 oldUser.UserRoleMasterId = user.UserRoleMasterId;
                 oldUser.Email= user.Email;
                 oldUser.IsActive = user.IsActive;
@@ -81,7 +81,7 @@ namespace DemoTask.Service.Service
             {
                 Id = user.Id,
                 FullName = user.FullName,
-                Password = user.Password,
+                Password =Common.Decrypt( user.Password),
                 Email = user.Email,
                 IsActive = user.IsActive,
                 IsArchived = user.IsArchived,
@@ -141,7 +141,7 @@ namespace DemoTask.Service.Service
 
         public UserViewModel? Login(string userName, string password)
         {
-            string passwordHash = Common.HashCode(password); 
+            string passwordHash = Common.Encrypt(password); 
             var user = RepoUser.Get(r => r.UserName == userName
                                       && r.Password == passwordHash   
                                       && r.IsActive);

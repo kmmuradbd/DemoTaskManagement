@@ -469,7 +469,6 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\static
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\staticwebassets.development.json
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\Demo.WebUI.csproj.Up2Date
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\Demo.WebUI.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\refint\Demo.WebUI.dll
@@ -502,3 +501,4 @@ D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\compre
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\MailKit.dll
 D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\bin\Debug\net9.0\MimeKit.dll
+D:\GitHub Project\DemoTaskManagement\DemoTask\Demo.WebUI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
